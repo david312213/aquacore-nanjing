@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="airseafly_real400" type="frame_cloud_bridge" name="real400_frames" output="screen" required="true">
+    <rosparam command="load" file="$(find airseafly_real400)/config/frames.yaml"/>
+    <remap from="/airseafly/lio/high_odom" to="/Odom_high_freq"/>
+    <remap from="/airseafly/lio/cloud_body" to="/cloud_registered_body"/>
+  </node>
+</launch>

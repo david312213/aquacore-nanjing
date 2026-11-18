@@ -1,0 +1,4 @@
+<launch>
+  <!-- Compatibility alias; the normal px4ctrl entry now controls MAVROS. -->
+  <include file="$(find px4ctrl)/launch/run_ctrl.launch"/>
+</launch>

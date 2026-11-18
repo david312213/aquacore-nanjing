@@ -1,0 +1,6 @@
+tent
+bunker
+bridge
+armored_vehicle
+red_cross
+landing_pad

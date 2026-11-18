@@ -1,0 +1,84 @@
+# 红点预览与比赛视觉进程共用；比赛启动时固定副本，不修改飞控参数。
+camera:
+  auto_start: true                  # 已有 image_raw 发布者时复用，不另开相机
+  # 2026-10-31 换装 HD USB Camera 05a3:9230。1280×720 用 YUYV 9 fps：MJPEG 被相机固定为 60 fps，
+  # 解码使红点进程占 260% CPU、每秒只出 0.5 次结果；YUYV 占 37.5%、每秒 9 次。
+  # 两种格式视场不同（fx 1091 / 719.5），内参不能互用。
+  # 旧相机：icSpring 640×480 yuyv（down_icspring_640x480_calib.yaml），
+  # DF200 1280×720 mjpeg（df200_calib.yaml）。
+  video_device: /dev/v4l/by-id/usb-HD_Camera_Manufacturer_USB_2.0_Camera-video-index0
+  autoexposure: true
+  exposure: 200
+  image_width: 1280
+  image_height: 720
+  pixel_format: yuyv
+  framerate: 9
+  # 相对路径按工作空间根目录解析；分辨率须与本相机实际输出一致。
+  # 2026-10-31 YUYV 棋盘格 40 张：RMS 0.33 px，fx 719.5±1.7（0.2%）。
+  # 原图在 data/calibration/down_camera/20261031_184037；MJPEG 内参 config/aircraft/down_hd_1280x720_calib.yaml 仅作对照。
+  calibration: config/aircraft/down_hd_1280x720_yuyv_calib.yaml
+topics:
+  image: /down_camera/image_raw
+  camera_info: /down_camera/camera_info
+  odometry: /airseafly/native/planning_odometry
+  localization_frame: /airseafly/native/raw_to_local
+  raw_odometry: /Odom_high_freq
+  status: /airseafly/red_point/status
+  annotated: /airseafly/red_point/image_annotated
+detector:
+  green_hough:
+    scale: 0.5
+    dp: 1.0
+    min_dist_px: 60.0
+    param1: 100.0
+    param2: 18.0
+    min_radius_px: 24
+    max_radius_px: 700
+    blur_kernel: 5
+    min_visible_degrees: 120.0
+    min_ring_support: 0.55
+    max_center_green: 0.25
+    dedup_radius_ratio: 0.5
+  # OpenCV HSV：H=0..179，S/V=0..255；不缩图、不默认腐蚀小红点。
+  red_ranges:
+    - [[0, 70, 40], [12, 255, 255]]
+    - [[168, 70, 40], [179, 255, 255]]
+  green_range: [[35, 55, 35], [95, 255, 255]]
+  white_range: [[0, 0, 80], [179, 70, 255]]
+  min_area_px: 4
+  min_circularity: 0.35
+  min_solidity: 0.6
+  max_aspect_ratio: 2.5
+  # 三者确认：绿环外缘、中央白圆、红点；只影响识别，不控制飞行任务。
+  min_contour_points: 12            # 排除图像裁切边后的拟合点数量
+  min_arc_degrees: 120.0            # 拟合椭圆上实际可见轮廓的角度覆盖
+  max_radial_residual: 0.16         # 按拟合半轴归一化后的平均径向误差
+  white_green_radius_ratio: [0.20, 0.85]  # 中央白圆 / 绿环外缘的等效半径
+  concentric_tolerance_px: 6.0
+  concentric_tolerance_ratio: 0.15  # 三中心最大距离 <= max(6px, 白圆半径*15%)
+projection:
+  frame_id: fast_lio_local_enu
+  # 定位必须在靶面所在的地面初始化；基准固定为定位 Z=0。
+  # 相机高度 = 图像时刻的定位 Z + 下述镜头离地高度，与预览启动位置无关。
+  camera_height_at_reference_m: 0.015
+  pixel_to_body: [[0.0, -1.0], [-1.0, 0.0]]
+  body_yaw_offset_rad: 0.0
+  # K/D 来自上面 camera.calibration 的原图标定。
+  # 保留近水平的水平位置近似；没有补造相机三维安装外参。
+# 最终降落 H 标：下视 YOLO11n 1016 版第 6 类 landing_pad。只在等待 H 图像的取图窗口运行，
+# 该窗口不跑红点/绿环识别。系统 OpenCV 4.2 不能加载此模型，由 yolo_fast（OpenCV 4.13）
+# 子进程推理；runtime/yolo_fast 链接到 ~/uav-aquacore 的同名环境。相对路径相对项目根目录。
+landing_pad:
+  enabled: true
+  model: models/yolo11n_20261016/down/down_yolo11n_best.onnx
+  python: runtime/yolo_fast/bin/python
+  class_names: [tent, bunker, bridge, armored_vehicle, red_cross, landing_pad]
+  target_class: landing_pad
+  input_size: 640
+  confidence: 0.45                  # 与模型导出说明一致
+  nms_iou: 0.70
+  opencv_threads: 1                 # 与 FAST-LIO 共用 4 核，限单线程
+  reply_timeout_s: 2.0              # 子进程单帧无回复即停用 H 识别，按无识别处理
+console:
+  rate_hz: 5.0                     # 仅限制终端打印；出现/消失/确认状态改变立即打印
+pose_history_samples: 2048          # 内存容量；无时间差准入阈值

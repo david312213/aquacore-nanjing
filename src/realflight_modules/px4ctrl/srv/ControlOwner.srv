@@ -1,0 +1,10 @@
+# Explicit handoff; native commands are ENU PositionTarget messages on native_setpoint.
+# PX4CTRL, PX4_NATIVE, PX4_HOLD, PX4_AUTO_LAND, STATUS
+string owner
+---
+bool accepted
+string owner
+string message
+float64[3] position_enu
+float64 yaw_enu
+float64 pose_stamp

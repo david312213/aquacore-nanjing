@@ -1,0 +1,13 @@
+<launch>
+  <arg name="controller_config" default="$(find px4ctrl)/config/ctrl_param_fpv.yaml"/>
+  <arg name="native_output_rate_hz" default="30.0"/>
+  <arg name="native_stop_on_mode_exit" default="false"/>
+  <!-- Upstream RealDrone400 wiring: EGO and px4ctrl share raw FAST-LIO odometry. -->
+  <node pkg="px4ctrl" type="px4ctrl_node" name="px4ctrl" output="screen">
+    <remap from="~odom" to="/Odom_high_freq"/>
+    <remap from="~cmd" to="/position_cmd"/>
+    <rosparam command="load" file="$(arg controller_config)"/>
+    <param name="native_output_rate_hz" value="$(arg native_output_rate_hz)"/>
+    <param name="native_stop_on_mode_exit" value="$(arg native_stop_on_mode_exit)"/>
+  </node>
+</launch>

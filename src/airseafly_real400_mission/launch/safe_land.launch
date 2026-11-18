@@ -1,0 +1,10 @@
+<launch>
+  <!-- Only requests the already-running controller. Never launches a second
+       controller, MAVROS, sensor driver, planner, detector or mission task. -->
+  <arg name="display_stale_s" default="2.0"/>
+  <node pkg="airseafly_real400_mission" type="safe_land.py" name="safe_land_request"
+        output="screen" required="true">
+    <!-- Display validity only; does not stop or alter the descent. -->
+    <param name="display_stale_s" value="$(arg display_stale_s)"/>
+  </node>
+</launch>

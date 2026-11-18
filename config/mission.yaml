@@ -1,0 +1,140 @@
+# 内部默认值；日常调参只修改 flight/flight.yaml。
+rc_payload:
+  channel: 9
+  low_max_us: 1300
+  high_min_us: 1700
+  closed_pwm_us: 900
+  open_pwm_us: 1350
+localization_gate:
+  enabled: true
+  max_error_m: 0.5
+  hold_s: 0.5
+runtime:
+  ros_master_uri: http://127.0.0.1:11341
+  control_rate_hz: 30.0
+  preview: false
+  python: /usr/bin/python3
+flight:
+  controller: px4_native
+  cruise_height_m: 1.0
+  drop_height_m: 0.2
+  native_takeoff_speed_mps: 0.5
+  native_takeoff_acceleration_mps2: 0.25
+  arrival_radius_m: 0.35
+  arrival_dwell_s: 0.5
+  home_arrival_xy_m: 0.05
+  height_tolerance_m: 0.05
+  height_dwell_s: 0.5
+  vertical_speed_mps: 0.15
+  native_task_feedback: lio
+  gate_height_m: null
+  drop_speed_mps: null
+  recover_speed_mps: null
+  native_reference_mode: lio_direct
+planning:
+  max_velocity_mps: 0.5
+  max_acceleration_mps2: 0.25
+  map:
+    resolution_m: 0.15
+    inflation_m: 0.25
+    max_height_m: 1.4
+    min_height_m: -1.0
+    # 地图总尺寸 X/Y/Z，单位 m；沿用原 EGO 100 × 50 × 3。
+    size_x_m: 100.0
+    size_y_m: 50.0
+    size_z_m: 3.0
+payload:
+  pd_profiles_enabled: false
+  sequence:
+  - 1
+  - 2
+  - 3
+  - 4
+  # 飞控当前校准量程；机构关闭区间 800～980，默认关闭取 900。
+  pwm_min_us: 900
+  pwm_center_us: 1450
+  pwm_max_us: 2000
+  pwm_command_max_us: 2000
+  reset_pwm_us: 900
+  locked_pwm_us: 900
+  released_pwm_us: 1190
+  settle_s: 1.0
+  ack_timeout_s: 5.0
+  release_dwell_s: 0.0
+  release_max_speed_mps: null
+  # 逻辑投放 1～4：MAIN6 第一档、MAIN7 第一档、MAIN6 第二档、MAIN7 第二档。
+  actuator_indices:
+    '1': 1
+    '2': 2
+    '3': 1
+    '4': 2
+  main_outputs:
+    '1': 6
+    '2': 7
+    '3': 6
+    '4': 7
+  pwm_max_us_by_slot: {}
+  released_pwm_us_by_slot:
+    '1': 1190
+    '2': 1190
+    '3': 1350
+    '4': 1350
+localization:
+  prediction_mode: 'off'
+  covariance_mode: fixed
+  max_imu_gap_s: 0.05
+  max_prediction_horizon_s: 1.0
+  pose_covariance_scale: 1.0
+  pose_covariance_floor_enabled: true
+  position_variance: 0.0025
+  orientation_variance: 0.0025
+  velocity_variance: 0.01
+  angular_velocity_variance: 0.0025
+motion:
+  native_profile: waypoint
+  native_setpoint_mode: position_velocity
+  second_z_tolerance_m: 0.05
+  native_horizontal_speed_mps: 0.1
+  native_acceleration_mps2: 0.5
+  first_arrival_radius_m: 0.1
+  second_xy_tolerance_m: 0.05
+  second_y_tolerance_m: null
+sensors:
+  cameras_enabled: false
+recording:
+  enabled: false
+visualization:
+  terminal_hz: 1.0
+  status_hz: 5.0
+lidar:
+  blind_m: 1
+  surface_voxel_m: 0.5
+  map_voxel_m: 0.5
+  point_filter_num: 3
+delivery_route_options:
+  laps: 1                          # 巡航闭环圈数：先绕 N 圈，再飞投放环/投放圈（旧共用航线为第 N+1 圈投放）
+  visual_alignment:
+    red_point_config: ${PROJECT}/flight/red_point.yaml
+    intermediate_height_m: 0.5  # 定位 Z；到投放点后直接下降至此识别红点
+    frame_timeout_s: 15.0
+    motion_timeout_margin_s: 15.0
+    retake_limit: 1
+    retry_xy_relax_m: 0.08
+  landing_alignment:
+    enabled: true
+    frame_timeout_s: 5.0
+    final_height_m: 0.15
+    final_speed_mps: 0.30
+  mount_offsets_body_m:
+    '1':
+    - 0.0
+    - 0.0
+    '2':
+    - 0.0
+    - 0.0
+    '3':
+    - 0.0
+    - 0.0
+    '4':
+    - 0.0
+    - 0.0

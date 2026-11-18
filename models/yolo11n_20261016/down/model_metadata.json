@@ -1,0 +1,55 @@
+{
+  "camera": "down",
+  "model": "YOLO11n",
+  "version": "20261016",
+  "profile": "yolo11n_20261016",
+  "class_names": [
+    "tent",
+    "bunker",
+    "bridge",
+    "armored_vehicle",
+    "red_cross",
+    "landing_pad"
+  ],
+  "sha256": "3cce09ea1703997329580df205fd5f2d3f695b1cfb691750eaefb0595d61d414",
+  "best_epoch": 65,
+  "completed_epochs": 95,
+  "preferred_scene": "20261015-16 current competition field",
+  "export_contract": {
+    "names": [
+      "tent",
+      "bunker",
+      "bridge",
+      "armored_vehicle",
+      "red_cross",
+      "landing_pad"
+    ],
+    "input_shape": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "output_shape": [
+      1,
+      10,
+      8400
+    ],
+    "dtype": "float32",
+    "input_preprocess": "production_detector.py preprocess_image: BGR uint8 to RGB float32 /255, letterbox 114",
+    "output": "cx cy w h and six class probabilities in model pixels",
+    "nms": "external class-aware NMS IoU 0.70",
+    "confidence": 0.45,
+    "duplicate_filter_mode": "off"
+  },
+  "initialization": "1013 best weights; fresh optimizer",
+  "dataset_images": 1884,
+  "train_images": 1305,
+  "validation_images": 485,
+  "boundary_excluded_images": 94,
+  "independent_flight_tested": false,
+  "known_limits": [
+    "blue-ring fragments and dark frames can cause false positives",
+    "old-scene H recall regressed; current field is the priority"
+  ]
+}

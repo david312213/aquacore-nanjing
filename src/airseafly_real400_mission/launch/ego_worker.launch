@@ -1,0 +1,60 @@
+<launch>
+  <arg name="boundary_corners" default=""/>
+  <arg name="boundary_bottom" default=""/>
+  <arg name="boundary_top" default=""/>
+  <arg name="map_size_x" default="100.0"/>
+  <arg name="map_size_y" default="50.0"/>
+  <arg name="map_size_z" default="3.0"/>
+  <arg name="map_resolution" default=""/>
+  <arg name="map_inflation" default=""/>
+  <arg name="map_max_height" default=""/>
+  <arg name="map_min_height" default=""/>
+  <arg name="session"/>
+  <arg name="height_origin_z" default="0.0"/>
+  <arg name="yaw"/>
+  <arg name="max_vel" default="0.3"/>
+  <arg name="max_acc" default="0.5"/>
+  <arg name="odometry_topic" default="/Odom_high_freq"/>
+  <arg name="cloud_topic" default="/cloud_registered"/>
+  <arg name="world_frame" default="world"/>
+  <arg name="fixed_yaw" default="false"/>
+  <arg name="min_replan_distance" default="0.2"/>
+  <group>
+    <remap from="/airseafly/front/goal" to="/airseafly/mission/session_$(arg session)/goal"/>
+    <remap from="/airseafly/front/goal_with_start" to="/airseafly/mission/session_$(arg session)/goal_with_start"/>
+    <remap from="/airseafly/front/goal_received" to="/airseafly/mission/session_$(arg session)/goal_received"/>
+    <remap from="/airseafly/front/goal_failed" to="/airseafly/mission/session_$(arg session)/goal_failed"/>
+    <remap from="/airseafly/front/goal_finished" to="/airseafly/mission/session_$(arg session)/goal_finished"/>
+    <remap from="/airseafly/mission/ego_ready" to="/airseafly/mission/session_$(arg session)/ready"/>
+    <remap from="/airseafly/mission/goal_trajectory" to="/airseafly/mission/session_$(arg session)/goal_trajectory"/>
+    <remap from="/airseafly/mission/goal_position_cmd" to="/airseafly/mission/session_$(arg session)/goal_position_cmd"/>
+    <include file="$(find ego_planner)/launch/mission_worker.launch">
+      <arg name="map_size_x" value="$(arg map_size_x)"/>
+      <arg name="map_size_y" value="$(arg map_size_y)"/>
+      <arg name="map_size_z" value="$(arg map_size_z)"/>
+      <arg name="map_resolution" value="$(arg map_resolution)"/>
+      <arg name="map_inflation" value="$(arg map_inflation)"/>
+      <arg name="map_max_height" value="$(arg map_max_height)"/>
+      <arg name="map_min_height" value="$(arg map_min_height)"/>
+    <arg name="boundary_corners" value="$(arg boundary_corners)"/>
+    <arg name="boundary_bottom" value="$(arg boundary_bottom)"/>
+    <arg name="boundary_top" value="$(arg boundary_top)"/>
+
+      <!-- ROS 只执行一次名称重映射，直接把本轮最终话题传给轨迹发送器。 -->
+      <arg name="position_cmd_topic" value="/airseafly/mission/session_$(arg session)/position_cmd"/>
+      <arg name="height_origin_z" value="$(arg height_origin_z)"/>
+      <arg name="yaw" value="$(arg yaw)"/>
+      <arg name="max_vel" value="$(arg max_vel)"/>
+      <arg name="max_acc" value="$(arg max_acc)"/>
+      <arg name="odometry_topic" value="$(arg odometry_topic)"/>
+      <arg name="cloud_topic" value="$(arg cloud_topic)"/>
+      <arg name="world_frame" value="$(arg world_frame)"/>
+    </include>
+    <!-- 普通航点沿用 EGO 预瞄航向和现有目标绑定。 -->
+    <param name="/drone_0_traj_server/traj_server/mission_fixed_yaw" value="$(arg fixed_yaw)" type="bool"/>
+    <param name="/drone_0_traj_server/traj_server/mission_goal_binding" value="true" type="bool"/>
+    <param name="/drone_0_ego_planner_node/fsm/mission_goal_binding" value="true" type="bool"/>
+    <param name="/drone_0_traj_server/traj_server/mission_yaw" value="$(arg yaw)" type="double"/>
+    <param name="/drone_0_ego_planner_node/manager/min_replan_distance" value="$(arg min_replan_distance)" type="double"/>
+  </group>
+</launch>

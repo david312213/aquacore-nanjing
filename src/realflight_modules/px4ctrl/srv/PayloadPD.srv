@@ -1,0 +1,20 @@
+# Inventory is an operator declaration plus accepted actuator commands,
+# not a sensor measurement of physical payload presence.
+uint8 STATUS=0
+uint8 RESET=1
+uint8 RELEASE=2
+uint8 operation
+uint8 slot
+uint8 loaded_mask
+# RELEASE must carry the inventory_id returned by the preceding STATUS call.
+string inventory_id
+---
+bool success
+string message
+bool enabled
+bool ready
+uint8 loaded_mask
+uint8 remaining
+float64[3] kp
+float64[3] kv
+string inventory_id

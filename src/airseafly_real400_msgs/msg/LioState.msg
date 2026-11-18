@@ -1,0 +1,11 @@
+std_msgs/Header header
+string child_frame_id
+geometry_msgs/Pose pose
+geometry_msgs/Vector3 velocity_world
+geometry_msgs/Vector3 angular_velocity_body
+geometry_msgs/Vector3 gyro_bias
+geometry_msgs/Vector3 accel_bias
+geometry_msgs/Vector3 gravity_world
+float64 accel_scale
+float64[36] pose_covariance
+string session_id

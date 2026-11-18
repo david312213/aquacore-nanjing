@@ -1,0 +1,55 @@
+image_width: 640
+image_height: 480
+camera_name: down_icspring_640x480
+camera_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 556.137759
+  - 0.0
+  - 347.756532
+  - 0.0
+  - 556.273046
+  - 221.738998
+  - 0.0
+  - 0.0
+  - 1.0
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data:
+  - -0.534254
+  - 0.33638
+  - -0.002698
+  - -0.007393
+  - -0.09894
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+projection_matrix:
+  rows: 3
+  cols: 4
+  data:
+  - 444.774628
+  - 0.0
+  - 351.854592
+  - 0.0
+  - 0.0
+  - 492.949554
+  - 215.259061
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0

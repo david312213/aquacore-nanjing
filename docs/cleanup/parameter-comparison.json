@@ -1,0 +1,311 @@
+{
+  "exact_match": true,
+  "parameters": {
+    "basic": {
+      "flight.controller": {
+        "before": "px4_native",
+        "after": "px4_native"
+      },
+      "flight.cruise_height_m": {
+        "before": 1.0,
+        "after": 1.0
+      },
+      "flight.drop_height_m": {
+        "before": 0.2,
+        "after": 0.2
+      },
+      "flight.native_takeoff_speed_mps": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "flight.native_takeoff_acceleration_mps2": {
+        "before": 0.25,
+        "after": 0.25
+      },
+      "flight.arrival_radius_m": {
+        "before": 0.35,
+        "after": 0.35
+      },
+      "flight.arrival_dwell_s": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "flight.height_tolerance_m": {
+        "before": 0.05,
+        "after": 0.05
+      },
+      "flight.height_dwell_s": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "flight.vertical_speed_mps": {
+        "before": 0.15,
+        "after": 0.15
+      },
+      "flight.native_task_feedback": {
+        "before": "lio",
+        "after": "lio"
+      },
+      "flight.gate_height_m": {
+        "before": null,
+        "after": null
+      },
+      "flight.drop_speed_mps": {
+        "before": null,
+        "after": null
+      },
+      "flight.recover_speed_mps": {
+        "before": null,
+        "after": null
+      },
+      "flight.native_reference_mode": {
+        "before": "lio_direct",
+        "after": "lio_direct"
+      },
+      "planning.max_velocity_mps": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "planning.max_acceleration_mps2": {
+        "before": 0.25,
+        "after": 0.25
+      },
+      "planning.map.resolution_m": {
+        "before": 0.15,
+        "after": 0.15
+      },
+      "planning.map.inflation_m": {
+        "before": 0.25,
+        "after": 0.25
+      },
+      "planning.map.max_height_m": {
+        "before": 1.4,
+        "after": 1.4
+      },
+      "planning.map.min_height_m": {
+        "before": -1.0,
+        "after": -1.0
+      },
+      "lidar.blind_m": {
+        "before": 1,
+        "after": 1
+      },
+      "lidar.surface_voxel_m": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "lidar.map_voxel_m": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "lidar.point_filter_num": {
+        "before": 3,
+        "after": 3
+      },
+      "localization.prediction_mode": {
+        "before": "off",
+        "after": "off"
+      },
+      "localization.covariance_mode": {
+        "before": "fixed",
+        "after": "fixed"
+      },
+      "localization.max_imu_gap_s": {
+        "before": 0.05,
+        "after": 0.05
+      },
+      "localization.max_prediction_horizon_s": {
+        "before": 1.0,
+        "after": 1.0
+      },
+      "localization.pose_covariance_scale": {
+        "before": 1.0,
+        "after": 1.0
+      },
+      "localization.pose_covariance_floor_enabled": {
+        "before": true,
+        "after": true
+      },
+      "localization.position_variance": {
+        "before": 0.0025,
+        "after": 0.0025
+      },
+      "localization.orientation_variance": {
+        "before": 0.0025,
+        "after": 0.0025
+      },
+      "localization.velocity_variance": {
+        "before": 0.01,
+        "after": 0.01
+      },
+      "localization.angular_velocity_variance": {
+        "before": 0.0025,
+        "after": 0.0025
+      },
+      "sensors.cameras_enabled": {
+        "before": false,
+        "after": false
+      },
+      "recording.enabled": {
+        "before": false,
+        "after": false
+      }
+    },
+    "delivery": {
+      "flight.controller": {
+        "before": "px4_native",
+        "after": "px4_native"
+      },
+      "flight.cruise_height_m": {
+        "before": 1.4,
+        "after": 1.4
+      },
+      "flight.drop_height_m": {
+        "before": 0.7,
+        "after": 0.7
+      },
+      "flight.native_takeoff_speed_mps": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "flight.native_takeoff_acceleration_mps2": {
+        "before": 0.25,
+        "after": 0.25
+      },
+      "flight.arrival_radius_m": {
+        "before": 0.35,
+        "after": 0.35
+      },
+      "flight.arrival_dwell_s": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "flight.height_tolerance_m": {
+        "before": 0.05,
+        "after": 0.05
+      },
+      "flight.height_dwell_s": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "flight.vertical_speed_mps": {
+        "before": 0.15,
+        "after": 0.15
+      },
+      "flight.native_task_feedback": {
+        "before": "lio",
+        "after": "lio"
+      },
+      "flight.gate_height_m": {
+        "before": 1.6,
+        "after": 1.6
+      },
+      "flight.drop_speed_mps": {
+        "before": 0.15,
+        "after": 0.15
+      },
+      "flight.recover_speed_mps": {
+        "before": 0.35,
+        "after": 0.35
+      },
+      "flight.native_reference_mode": {
+        "before": "lio_direct",
+        "after": "lio_direct"
+      },
+      "planning.max_velocity_mps": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "planning.max_acceleration_mps2": {
+        "before": 0.25,
+        "after": 0.25
+      },
+      "planning.map.resolution_m": {
+        "before": 0.15,
+        "after": 0.15
+      },
+      "planning.map.inflation_m": {
+        "before": 0.25,
+        "after": 0.25
+      },
+      "planning.map.max_height_m": {
+        "before": 1.1,
+        "after": 1.1
+      },
+      "planning.map.min_height_m": {
+        "before": -1.0,
+        "after": -1.0
+      },
+      "lidar.blind_m": {
+        "before": 1,
+        "after": 1
+      },
+      "lidar.surface_voxel_m": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "lidar.map_voxel_m": {
+        "before": 0.5,
+        "after": 0.5
+      },
+      "lidar.point_filter_num": {
+        "before": 3,
+        "after": 3
+      },
+      "localization.prediction_mode": {
+        "before": "off",
+        "after": "off"
+      },
+      "localization.covariance_mode": {
+        "before": "fixed",
+        "after": "fixed"
+      },
+      "localization.max_imu_gap_s": {
+        "before": 0.05,
+        "after": 0.05
+      },
+      "localization.max_prediction_horizon_s": {
+        "before": 1.0,
+        "after": 1.0
+      },
+      "localization.pose_covariance_scale": {
+        "before": 1.0,
+        "after": 1.0
+      },
+      "localization.pose_covariance_floor_enabled": {
+        "before": true,
+        "after": true
+      },
+      "localization.position_variance": {
+        "before": 0.0025,
+        "after": 0.0025
+      },
+      "localization.orientation_variance": {
+        "before": 0.0025,
+        "after": 0.0025
+      },
+      "localization.velocity_variance": {
+        "before": 0.01,
+        "after": 0.01
+      },
+      "localization.angular_velocity_variance": {
+        "before": 0.0025,
+        "after": 0.0025
+      },
+      "sensors.cameras_enabled": {
+        "before": false,
+        "after": false
+      },
+      "recording.enabled": {
+        "before": false,
+        "after": false
+      }
+    }
+  },
+  "map_dimensions_m": [
+    100,
+    50,
+    3
+  ],
+  "map_dimensions_source": "unchanged original EGO launch defaults"
+}

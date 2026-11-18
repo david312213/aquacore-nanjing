@@ -1,0 +1,30 @@
+<launch>
+  <!-- Acquisition only, in a private owner namespace. Format defaults are the HD USB Camera. -->
+  <arg name="owner_ns"/>
+  <arg name="image_topic"/>
+  <arg name="camera_info_topic"/>
+  <arg name="video_device"/>
+  <arg name="autoexposure"/>
+  <arg name="exposure"/>
+  <arg name="image_width" default="1280"/>
+  <arg name="image_height" default="720"/>
+  <arg name="pixel_format" default="yuyv"/>
+  <arg name="framerate" default="9"/>
+  <arg name="camera_name" default="down_hd_1280x720_yuyv"/>
+  <arg name="camera_info_url" default="file://$(find airseafly_real400)/config/aircraft/down_hd_1280x720_yuyv_calib.yaml"/>
+  <group ns="$(arg owner_ns)">
+    <remap from="down_camera/image_raw" to="$(arg image_topic)"/>
+    <remap from="down_camera/camera_info" to="$(arg camera_info_topic)"/>
+    <include file="$(find airseafly_real400_mission)/launch/df200_camera.launch">
+      <arg name="video_device" value="$(arg video_device)"/>
+      <arg name="autoexposure" value="$(arg autoexposure)"/>
+      <arg name="exposure" value="$(arg exposure)"/>
+      <arg name="image_width" value="$(arg image_width)"/>
+      <arg name="image_height" value="$(arg image_height)"/>
+      <arg name="pixel_format" value="$(arg pixel_format)"/>
+      <arg name="framerate" value="$(arg framerate)"/>
+      <arg name="camera_name" value="$(arg camera_name)"/>
+      <arg name="camera_info_url" value="$(arg camera_info_url)"/>
+    </include>
+  </group>
+</launch>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>airseafly_real400_msgs</name><version>0.1.0</version>
+  <description>Timestamped FAST-LIO posterior for the isolated REAL400 profile.</description>
+  <maintainer email="team@airseafly.local">AirSeaFly Team</maintainer>
+  <license>MIT</license><buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend><depend>geometry_msgs</depend><depend>std_msgs</depend>
+  <exec_depend>message_runtime</exec_depend>
+  <depend>nav_msgs</depend><depend>traj_utils</depend><depend>quadrotor_msgs</depend>
+</package>

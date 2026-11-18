@@ -1,0 +1,11 @@
+mount:
+  # Bench calibration and independent recording validation: docs/mid360_px4_calibration_20261024.md
+  calibration_id: mid360_px4_joint_01_02_holdout_03_20261024
+  quaternion_xyzw: [0.011263239136167853, 0.005328745690635769, -0.001781671198018767, 0.99992078164286]
+  translation_xyz_m: [0.005737691477378042, 0.023500373050790356, 0.040047948804599956]
+lidar_in_imu:
+  quaternion_xyzw: [0.0, 0.0, 0.0, 1.0]
+  translation_xyz_m: [-0.011, -0.02329, 0.04412]
+initialization_seconds: 2.0
+self_filter: {radius: 0.4, z_min: -0.5, z_max: 0.3}
+cloud: {z_min: 0.08, z_max: 2.7, range: 5.0, voxel: 0.05}

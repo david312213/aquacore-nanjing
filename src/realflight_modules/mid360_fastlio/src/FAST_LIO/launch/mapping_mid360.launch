@@ -1,0 +1,34 @@
+<launch>
+<!-- Launch file for Livox MID360 LiDAR -->
+
+	<arg name="rviz" default="true" />
+    <arg name="lidar_blind" default=""/>
+    <arg name="lidar_surface_voxel" default="0.5"/>
+    <arg name="lidar_map_voxel" default="0.5"/>
+    <arg name="lidar_point_filter_num" default="3"/>
+    <arg name="prediction_mode" default="off"/>
+    <arg name="prediction_max_imu_gap" default="0.05"/>
+    <arg name="prediction_max_prediction_horizon" default="1.0"/>
+
+	<rosparam command="load" file="$(find fast_lio)/config/mid360.yaml" />
+    <param name="prediction/mode" value="$(arg prediction_mode)" type="str"/>
+    <param name="prediction/max_imu_gap" value="$(arg prediction_max_imu_gap)" type="double"/>
+    <param name="prediction/max_prediction_horizon" value="$(arg prediction_max_prediction_horizon)" type="double"/>
+    <!-- Load original calibration first; explicit startup tuning only overrides these scalars. -->
+    <param name="preprocess/blind" value="$(arg lidar_blind)" type="double"
+           if="$(eval arg('lidar_blind') != '')"/>
+
+	<param name="feature_extract_enable" type="bool" value="0"/>
+	<param name="point_filter_num" type="int" value="$(arg lidar_point_filter_num)"/>
+	<param name="max_iteration" type="int" value="3" />
+	<param name="filter_size_surf" type="double" value="$(arg lidar_surface_voxel)" />
+	<param name="filter_size_map" type="double" value="$(arg lidar_map_voxel)" />
+	<param name="cube_side_length" type="double" value="1000" />
+	<param name="runtime_pos_log_enable" type="bool" value="0" />
+    <node pkg="fast_lio" type="fastlio_mapping" name="laserMapping" output="screen" /> 
+
+	<group if="$(arg rviz)">
+	<node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find fast_lio)/rviz_cfg/loam_livox.rviz" />
+	</group>
+
+</launch>

@@ -1,0 +1,92 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 20
+      Reference Frame: <Fixed Frame>
+    - Class: rviz/PointCloud2
+      Name: EGO Inflated Map
+      Enabled: true
+      Topic: /drone_0_ego_planner_node/grid_map/occupancy_inflate
+      Queue Size: 1
+      Style: Boxes
+      Size (m): 0.15
+      Color Transformer: AxisColor
+      Axis: Z
+      Use Fixed Frame: true
+      Decay Time: 0
+    - Class: rviz/PointCloud2
+      Name: Planning Cloud (heavy over WiFi)
+      Enabled: false
+      Topic: /airseafly/native/planning_cloud
+      Queue Size: 1
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: Intensity
+      Use Fixed Frame: true
+      Decay Time: 0
+    - Class: rviz/Odometry
+      Name: Planning Odometry
+      Enabled: true
+      Topic: /airseafly/native/planning_odometry
+      Keep: 1
+      Position Tolerance: 0.1
+      Angle Tolerance: 0.1
+      Shape:
+        Value: Arrow
+        Color: 255; 25; 0
+        Alpha: 1
+        Shaft Length: 0.5
+        Shaft Radius: 0.05
+        Head Length: 0.2
+        Head Radius: 0.1
+    - Class: rviz/Marker
+      Name: EGO Goal
+      Enabled: true
+      Marker Topic: /drone_0_ego_planner_node/goal_point
+    - Class: rviz/Marker
+      Name: EGO Optimal Trajectory
+      Enabled: true
+      Marker Topic: /drone_0_ego_planner_node/optimal_list
+    - Class: rviz/Marker
+      Name: EGO Global Path
+      Enabled: true
+      Marker Topic: /drone_0_ego_planner_node/global_list
+    - Class: rviz/Marker
+      Name: EGO A* Search
+      Enabled: false
+      Marker Topic: /drone_0_ego_planner_node/a_star_list
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: fast_lio_local_enu
+    Frame Rate: 30
+  Name: root
+  # Monitoring only: no 2D Nav Goal / Publish Point tools. EGO subscribes to
+  # /move_base_simple/goal, so a stray click must not be able to send a target.
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 12
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.9
+      Yaw: 3.9
+      Target Frame: <Fixed Frame>
+    Saved: ~

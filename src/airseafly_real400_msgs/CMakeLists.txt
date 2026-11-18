@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0.2)
+project(airseafly_real400_msgs)
+find_package(catkin REQUIRED COMPONENTS message_generation geometry_msgs std_msgs nav_msgs traj_utils quadrotor_msgs)
+add_message_files(FILES LioState.msg EgoGoalTrajectory.msg EgoGoalCommand.msg)
+add_service_files(FILES MissionTakeoff.srv CheckSearchPoints.srv)
+generate_messages(DEPENDENCIES geometry_msgs std_msgs nav_msgs traj_utils quadrotor_msgs)
+catkin_package(CATKIN_DEPENDS message_runtime geometry_msgs std_msgs nav_msgs traj_utils quadrotor_msgs)

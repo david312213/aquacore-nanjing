@@ -1,0 +1,23 @@
+{
+  "exact_match": true,
+  "ticks": {
+    "delivery": 591,
+    "takeoff": 42,
+    "waypoint": 63
+  },
+  "checked_fields": [
+    "control",
+    "desired_group",
+    "effects",
+    "goal_id",
+    "native_command",
+    "phase",
+    "position_xyz",
+    "reference_source",
+    "state",
+    "velocity_xyz",
+    "yaw"
+  ],
+  "trace_sha256": "a1af62552620d19bd7a10c9b27def0f80c875a616546b6982049d6f817ad6a81",
+  "trace_directory": "/Users/david/Documents/ChatGPT/aquacore-nanjing-backups/20261024-211713-cleanup"
+}

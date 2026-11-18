@@ -1,0 +1,196 @@
+<launch>
+  <arg name="boundary_corners" default=""/>
+  <arg name="boundary_bottom" default=""/>
+  <arg name="boundary_top" default=""/>
+
+  <arg name="map_size_x_"/>
+  <arg name="map_size_y_"/>
+  <arg name="map_size_z_"/>
+
+  <arg name="odometry_topic"/>
+  <arg name="camera_pose_topic"/>
+  <arg name="depth_topic"/>
+  <arg name="cloud_topic"/>
+  <arg name="world_frame" default="world"/>
+
+  <arg name="cx"/>
+  <arg name="cy"/>
+  <arg name="fx"/>
+  <arg name="fy"/>
+
+  <arg name="max_vel"/>
+  <arg name="max_acc"/>
+  <arg name="planning_horizon"/>
+
+  <arg name="point_num"/>
+  <arg name="point0_x"/>
+  <arg name="point0_y"/>
+  <arg name="point0_z"/>
+  <arg name="point1_x"/>
+  <arg name="point1_y"/>
+  <arg name="point1_z"/>
+  <arg name="point2_x"/>
+  <arg name="point2_y"/>
+  <arg name="point2_z"/>
+  <arg name="point3_x"/>
+  <arg name="point3_y"/>
+  <arg name="point3_z"/>
+  <arg name="point4_x"/>
+  <arg name="point4_y"/>
+  <arg name="point4_z"/>
+
+  <arg name="flight_type"/>
+  <arg name="use_distinctive_trajs"/>
+
+  <arg name="obj_num_set"/>
+
+  <arg name="drone_id"/>
+  <arg name="planner_node_name" default="drone_$(arg drone_id)_ego_planner_node"/>
+  <arg name="planner_node_type" default="ego_planner_node"/>
+  <arg name="height_origin_z" default="0.0"/>
+  <arg name="require_initial_map" default="false"/>
+  <arg name="map_resolution" default="0.15"/>
+  <arg name="map_inflation" default="0.25"/>
+  <arg name="map_max_height" default="1.1"/>
+  <arg name="map_min_height" default="-1.0"/>
+
+
+  <!-- main node -->
+  <!-- <node pkg="ego_planner" name="ego_planner_node" type="ego_planner_node" output="screen" launch-prefix="valgrind"> -->
+  <node pkg="ego_planner" name="$(arg planner_node_name)" type="$(arg planner_node_type)" output="screen">
+  
+    <remap from="~odom_world" to="$(arg odometry_topic)"/>
+    <remap from="~planning/bspline" to = "/drone_$(arg drone_id)_planning/bspline"/>
+    <remap from="~planning/data_display" to = "/drone_$(arg drone_id)_planning/data_display"/>
+    <remap from="~planning/broadcast_bspline_from_planner" to = "/broadcast_bspline"/>
+    <remap from="~planning/broadcast_bspline_to_planner" to = "/broadcast_bspline"/>
+
+    <remap from="~grid_map/odom" to="$(arg odometry_topic)"/>
+    <remap from="~grid_map/cloud" to="$(arg cloud_topic)"/>
+    <remap from="~grid_map/pose"   to = "$(arg camera_pose_topic)"/> 
+    <remap from="~grid_map/depth" to = "$(arg depth_topic)"/>
+    
+
+    <!-- planning fsm -->
+    <!-- RViz 的 2D Nav Goal 使用此 world Z（m）；任务 XYZ 航点不受此参数覆盖。 -->
+    <param name="fsm/rviz_goal_height" value="0.8" type="double"/>
+    <param name="world_frame" value="$(arg world_frame)"/>
+    <param name="fsm/flight_type" value="$(arg flight_type)" type="int"/>
+    <param name="fsm/require_initial_map" value="$(arg require_initial_map)" type="bool"/>
+    <param name="fsm/thresh_replan_time" value="1.0" type="double"/>
+    <param name="fsm/thresh_no_replan_meter" value="1.0" type="double"/>
+    <param name="fsm/planning_horizon" value="$(arg planning_horizon)" type="double"/> <!--always set to 1.5 times grater than sensing horizen-->
+    <param name="fsm/planning_horizen_time" value="3" type="double"/>
+    <param name="fsm/emergency_time" value="1.0" type="double"/>
+    <param name="fsm/realworld_experiment" value="true"/>
+    <param name="fsm/fail_safe" value="true"/>
+
+    <param name="fsm/waypoint_num" value="$(arg point_num)" type="int"/>
+    <param name="fsm/waypoint0_x" value="$(arg point0_x)" type="double"/>
+    <param name="fsm/waypoint0_y" value="$(arg point0_y)" type="double"/>
+    <param name="fsm/waypoint0_z" value="$(arg point0_z)" type="double"/>
+    <param name="fsm/waypoint1_x" value="$(arg point1_x)" type="double"/>
+    <param name="fsm/waypoint1_y" value="$(arg point1_y)" type="double"/>
+    <param name="fsm/waypoint1_z" value="$(arg point1_z)" type="double"/>
+    <param name="fsm/waypoint2_x" value="$(arg point2_x)" type="double"/>
+    <param name="fsm/waypoint2_y" value="$(arg point2_y)" type="double"/>
+    <param name="fsm/waypoint2_z" value="$(arg point2_z)" type="double"/>
+    <param name="fsm/waypoint3_x" value="$(arg point3_x)" type="double"/>
+    <param name="fsm/waypoint3_y" value="$(arg point3_y)" type="double"/>
+    <param name="fsm/waypoint3_z" value="$(arg point3_z)" type="double"/>
+    <param name="fsm/waypoint4_x" value="$(arg point4_x)" type="double"/>
+    <param name="fsm/waypoint4_y" value="$(arg point4_y)" type="double"/>
+    <param name="fsm/waypoint4_z" value="$(arg point4_z)" type="double"/>
+
+    <param name="grid_map/resolution"      value="$(arg map_resolution)" /> 
+    <param name="grid_map/map_size_x"   value="$(arg map_size_x_)" /> 
+    <param name="grid_map/map_size_y"   value="$(arg map_size_y_)" /> 
+    <param name="grid_map/map_size_z"   value="$(arg map_size_z_)" /> 
+    <param name="grid_map/local_update_range_x"  value="5.5" /> 
+    <param name="grid_map/local_update_range_y"  value="5.5" /> 
+    <param name="grid_map/local_update_range_z"  value="1.5" /> 
+    <!-- 障碍膨胀距离，单位 m；集中调参由启动参数传入。
+         未提供覆盖的旧入口继续使用本文件 arg 默认值，沿用原始膨胀算法。 -->
+    <param name="grid_map/obstacles_inflation" value="$(arg map_inflation)" type="double"/>
+    <param name="grid_map/local_map_margin" value="10"/>
+    <param name="grid_map/ground_height"        value="-0.01"/>
+    <!-- camera parameter -->
+    <param name="grid_map/cx" value="$(arg cx)"/>
+    <param name="grid_map/cy" value="$(arg cy)"/>
+    <param name="grid_map/fx" value="$(arg fx)"/>
+    <param name="grid_map/fy" value="$(arg fy)"/>
+    <!-- depth filter -->
+    <param name="grid_map/use_depth_filter" value="true"/>
+    <param name="grid_map/depth_filter_tolerance" value="0.15"/>
+    <param name="grid_map/depth_filter_maxdist"   value="5.0"/>
+    <param name="grid_map/depth_filter_mindist"   value="0.2"/>
+    <param name="grid_map/depth_filter_margin"    value="2"/>
+    <param name="grid_map/k_depth_scaling_factor" value="1000.0"/>
+    <param name="grid_map/skip_pixel" value="2"/>
+    <!-- local fusion -->
+    <param name="grid_map/p_hit"  value="0.65"/>
+    <param name="grid_map/p_miss" value="0.35"/>
+    <param name="grid_map/p_min"  value="0.12"/>
+    <param name="grid_map/p_max"  value="0.90"/>
+    <param name="grid_map/p_occ"  value="0.80"/>
+    <param name="grid_map/min_ray_length" value="0.3"/>
+    <param name="grid_map/max_ray_length" value="5.0"/>
+
+    <!-- 虚拟天花板：单位 m，相对 height_origin_z；负数关闭。
+         完整任务传起飞基准 Z；无起飞基准的独立入口使用 world Z=0。
+         这是飞机定位参考点的规划上限，不再叠加障碍膨胀。
+         集中调参入口为 flight/flight.yaml；下方 visualization 参数只影响显示。 -->
+    <param name="grid_map/virtual_ceil_height" value="$(arg map_max_height)" type="double"/>
+    <param name="grid_map/virtual_ceil_origin_z" value="$(arg height_origin_z)" type="double"/>
+    <!-- 虚拟地板：与天花板共用起飞基准，参考点高度 <= 此值视为占据。
+         不再叠加膨胀；负数关闭；直接起降由原控制流程执行。 -->
+    <param name="grid_map/boundary_corners" value="$(arg boundary_corners)" type="str"/>
+    <param name="grid_map/boundary_bottom" value="$(arg boundary_bottom)" type="str"/>
+    <param name="grid_map/boundary_top" value="$(arg boundary_top)" type="str"/>
+    <param name="grid_map/virtual_floor_height" value="$(arg map_min_height)" type="double"/>
+    <param name="grid_map/virtual_floor_origin_z" value="$(arg height_origin_z)" type="double"/>
+    <!-- 只控制RViz地图点云中的虚拟天花板显示；false隐藏，规划限高仍然生效。
+         真实障碍物及其膨胀点继续显示，包括天花板以上的真实障碍。 -->
+    <param name="grid_map/show_virtual_ceiling" value="false" type="bool"/>
+    <!-- 与天花板相同：隐藏虚拟点云不关闭规划边界，真实障碍照常显示。 -->
+    <param name="grid_map/show_virtual_floor" value="false" type="bool"/>
+    <param name="grid_map/visualization_truncate_height"   value="1.8"/>
+    <param name="grid_map/show_occ_time"  value="false"/>
+    <param name="grid_map/pose_type"     value="2"/>  
+    <param name="grid_map/frame_id"      value="$(arg world_frame)"/>
+
+  <!-- planner manager -->
+    <param name="manager/max_vel" value="$(arg max_vel)" type="double"/>
+    <param name="manager/max_acc" value="$(arg max_acc)" type="double"/>
+    <param name="manager/max_jerk" value="4" type="double"/>
+    <param name="manager/control_points_distance" value="0.4" type="double"/>
+    <param name="manager/feasibility_tolerance" value="0.05" type="double"/>
+    <param name="manager/planning_horizon" value="$(arg planning_horizon)" type="double"/>
+    <param name="manager/use_distinctive_trajs" value="$(arg use_distinctive_trajs)" type="bool"/>
+    <param name="manager/drone_id" value="$(arg drone_id)"/>
+
+  <!-- trajectory optimization -->
+    <param name="optimization/lambda_smooth" value="1.0" type="double"/>
+    <param name="optimization/lambda_collision" value="0.5" type="double"/>
+    <param name="optimization/lambda_feasibility" value="0.1" type="double"/>
+    <param name="optimization/lambda_fitness" value="1.0" type="double"/>
+    <param name="optimization/dist0" value="0.5" type="double"/>
+    <param name="optimization/swarm_clearance" value="0.5" type="double"/>
+    <param name="optimization/max_vel" value="$(arg max_vel)" type="double"/>
+    <param name="optimization/max_acc" value="$(arg max_acc)" type="double"/>
+
+    <param name="bspline/limit_vel" value="$(arg max_vel)" type="double"/>
+    <param name="bspline/limit_acc" value="$(arg max_acc)" type="double"/>
+    <param name="bspline/limit_ratio" value="1.1" type="double"/>
+
+  <!-- objects prediction -->
+    <param name="prediction/obj_num" value="$(arg obj_num_set)" type="int"/>
+    <param name="prediction/lambda" value="1.0" type="double"/>
+    <param name="prediction/predict_rate" value="1.0" type="double"/>
+  
+  
+
+
+  </node>
+
+</launch>

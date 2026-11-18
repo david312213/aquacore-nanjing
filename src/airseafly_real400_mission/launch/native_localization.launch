@@ -1,0 +1,23 @@
+<launch>
+  <arg name="publish_planning_interfaces" default="false"/>
+  <arg name="covariance_mode" default="fixed"/>
+  <arg name="pose_covariance_scale" default="1.0"/>
+  <arg name="pose_covariance_floor_enabled" default="true"/>
+  <arg name="position_variance" default="0.0025"/>
+  <arg name="orientation_variance" default="0.0025"/>
+  <arg name="velocity_variance" default="0.01"/>
+  <arg name="angular_velocity_variance" default="0.0025"/>
+  <node pkg="airseafly_real400_mission" type="native_lio_bridge.py" name="native_lio_bridge" output="screen" required="true">
+    <rosparam command="load" file="$(find airseafly_real400)/config/frames.yaml"/>
+    <param name="publish_planning_interfaces" value="$(arg publish_planning_interfaces)"/>
+    <param name="covariance_mode" value="$(arg covariance_mode)"/>
+    <param name="pose_covariance_scale" value="$(arg pose_covariance_scale)" type="double"/>
+    <param name="pose_covariance_floor_enabled" value="$(arg pose_covariance_floor_enabled)" type="bool"/>
+    <param name="position_variance" value="$(arg position_variance)" type="double"/>
+    <param name="orientation_variance" value="$(arg orientation_variance)" type="double"/>
+    <param name="velocity_variance" value="$(arg velocity_variance)" type="double"/>
+    <param name="angular_velocity_variance" value="$(arg angular_velocity_variance)" type="double"/>
+  </node>
+  <node if="$(arg publish_planning_interfaces)" pkg="airseafly_real400_mission"
+        type="native_planning_cloud.py" name="native_planning_cloud" output="screen"/>
+</launch>

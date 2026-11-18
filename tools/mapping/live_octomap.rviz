@@ -1,0 +1,54 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: lio_init
+    Background Color: 30; 30; 35
+    Frame Rate: 15
+  Displays:
+    - Class: rviz/Grid
+      Name: 1 m grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 30
+      Reference Frame: <Fixed Frame>
+    - Class: rviz/MarkerArray
+      Name: OctoMap occupied voxels
+      Enabled: true
+      Marker Topic: /airseafly/octomap_preview/occupied_cells_vis_array
+      Queue Size: 1
+    - Class: rviz/Odometry
+      Name: FAST-LIO trajectory
+      Enabled: true
+      Topic: /airseafly/lio/raw_odom
+      Keep: 400
+      Position Tolerance: 0.05
+      Angle Tolerance: 0.15
+      Shape:
+        Value: Axes
+        Axes Length: 0.2
+        Axes Radius: 0.02
+  Tools:
+    - Class: rviz/Interact
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 15
+      Pitch: 0.7
+      Yaw: 0.8
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0.7
+      Target Frame: <Fixed Frame>
+Window Geometry:
+  Width: 1250
+  Height: 850
+Preferences:
+  PromptSaveOnExit: false

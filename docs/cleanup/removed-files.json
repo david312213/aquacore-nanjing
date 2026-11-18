@@ -1,0 +1,3009 @@
+[
+  {
+    "path": "config/cameras/front.launch",
+    "mode": 420,
+    "sha256": "735ef6b8a7b95c16aa158d23543ce68916c28d8b3bd9126e000ecd9b7286f7e5",
+    "size": 974
+  },
+  {
+    "path": "config/front_camera_lidar.yaml",
+    "mode": 420,
+    "sha256": "5d50d0b0ff7b40e574f31072b320406bcaf043c8826fd54cb797daf6ac5714c4",
+    "size": 884
+  },
+  {
+    "path": "config/packages/airseafly_front_goal/camera_lidar_candidate_20260929.yaml",
+    "mode": 493,
+    "link": "../../front_camera_lidar.yaml"
+  },
+  {
+    "path": "config/packages/airseafly_front_goal/camera_lidar_format.yaml",
+    "mode": 420,
+    "sha256": "5a25aeb1599935ab601f20864867c27affc72df5f5a8b83c0979e91f6bc07eff",
+    "size": 358
+  },
+  {
+    "path": "config/packages/airseafly_front_goal/front_goal.yaml",
+    "mode": 420,
+    "sha256": "0bac83e5c47c5cd8820722d646f98b6c3b5aed8e18beab32437e1a89a5e01406",
+    "size": 1106
+  },
+  {
+    "path": "config/packages/airseafly_front_goal/front_verify.yaml",
+    "mode": 420,
+    "sha256": "760317d7265ff9ff6302c7b54ef46d3bdc2e7413096a20492d7da1146fcf89d9",
+    "size": 626
+  },
+  {
+    "path": "config/packages/airseafly_front_goal/front_verify_yolo11n.yaml",
+    "mode": 420,
+    "sha256": "5dd7522010a12ec7185ba2de0d19bf596983a1c18a59e00588b44d61c5a91757",
+    "size": 402
+  },
+  {
+    "path": "config/packages/airseafly_obstacle_mission/mission.yaml",
+    "mode": 420,
+    "sha256": "d77dcc9a9d5b38b46e6155b139184347ae7c6bde762d6e4ca2f1871730c08278",
+    "size": 2327
+  },
+  {
+    "path": "config/packages/airseafly_real400_mission/debug_field.yaml",
+    "mode": 420,
+    "sha256": "84af7e080c9dd0c3ebd8857e01e153977554608fa959ef2f54a25c68cc1ed446",
+    "size": 6658
+  },
+  {
+    "path": "docs/ego_fix_delivery_20261016.md",
+    "mode": 420,
+    "sha256": "9a563cfcd88acae305a2cbbde90c868841b73ae70e27f665b7d007556e3e656c",
+    "size": 10699
+  },
+  {
+    "path": "docs/evidence/mission.snapshot.yaml",
+    "mode": 420,
+    "sha256": "6507130d999fe17f6bfa1b2a060adf2ed9b90a48247f2818f19cc196774c05c6",
+    "size": 6786
+  },
+  {
+    "path": "docs/release_source.json",
+    "mode": 420,
+    "sha256": "722e8ffcf7a99fd2a84c16138de9b239716b6e9841a67ac2d67360f05e913332",
+    "size": 244538
+  },
+  {
+    "path": "docs/release_validation.json",
+    "mode": 420,
+    "sha256": "bd6554f93256ccec55c7f5f5a825b334d77999c6b215819b793af6e08ebecd94",
+    "size": 14157
+  },
+  {
+    "path": "docs/source_manifest.json",
+    "mode": 420,
+    "sha256": "63a7043998e8f4faa7303b9ef9f96eb47232f7d90b04b0502ae89d69d57b4805",
+    "size": 434504
+  },
+  {
+    "path": "docs/归档与验证_20261020.md",
+    "mode": 420,
+    "sha256": "a135680059fd01faf84e51cb7f06d361d4872a3124d4dccff2516a4ade74ae3b",
+    "size": 3761
+  },
+  {
+    "path": "docs/验证结果.json",
+    "mode": 420,
+    "sha256": "1367b014add146e4328c92420e7436e7c3dc97157bb28b6060a1eb6b22f9fc88",
+    "size": 7886
+  },
+  {
+    "path": "flight/4_altair_door.sh",
+    "mode": 420,
+    "sha256": "2e47dbfbdaff6bd10c032058cda8d37c640dc3b53db158f1509d5b8f966bdce0",
+    "size": 879
+  },
+  {
+    "path": "flight/4_ego_three_points.sh",
+    "mode": 493,
+    "sha256": "6a9745955bace54bee2d57d2fdd7e900134b19c42e17a2a5b641a9d8a12e4f5b",
+    "size": 913
+  },
+  {
+    "path": "flight/4_final_mission.sh",
+    "mode": 493,
+    "sha256": "c64fa3035c7f0b0b8a340b7928588e3223b9d7168cdf600d4ecf7632e16c058e",
+    "size": 210
+  },
+  {
+    "path": "flight/4_final_mission_double_scan.sh",
+    "mode": 493,
+    "sha256": "2f164209a172b92ef1093b01fcf2012011619995db4baf1b67f94a769ef0555a",
+    "size": 217
+  },
+  {
+    "path": "flight/4_hover_drop.sh",
+    "mode": 493,
+    "sha256": "26f5ecd161865e68e2213939490238636d6a029f8292433af3b793f011ed5927",
+    "size": 138
+  },
+  {
+    "path": "flight/4_mission.sh",
+    "mode": 493,
+    "sha256": "1ebc713586bf7322fcf4267887581a07c840440ba04abee30c36aca156f75147",
+    "size": 307
+  },
+  {
+    "path": "flight/4_neural_door.sh",
+    "mode": 420,
+    "sha256": "17ecbfab35240e367b8ef97a947f8503fbe23a120c9d8a2c0deddc738bedf485",
+    "size": 11872
+  },
+  {
+    "path": "flight/4_neural_door_preview.sh",
+    "mode": 420,
+    "sha256": "7ea780178812bd305c5b1a1747212eb50c06120c09a4e6a98a034c09b372463a",
+    "size": 420
+  },
+  {
+    "path": "flight/4_rviz_ego.sh",
+    "mode": 493,
+    "sha256": "6bf468432139ab317d19afb17f6b32ec0c43217d044b98af6c43be8818f4d2b8",
+    "size": 1114
+  },
+  {
+    "path": "flight/4_tracking_test.sh",
+    "mode": 493,
+    "sha256": "a2514bdfafb3e1aee9e677c4ec4131d58f8b2ac31b18b08ec4b443920dd8f80f",
+    "size": 14013
+  },
+  {
+    "path": "flight/5_servo_test.sh",
+    "mode": 420,
+    "sha256": "7f6c55236070dc0164db3fccb2db23dd2df0b5a57f46058134bdf107c0b54fa7",
+    "size": 304
+  },
+  {
+    "path": "flight/6_pid_autotune.sh",
+    "mode": 420,
+    "sha256": "84f1a7e8e1c89dc65792a7cd883f8f3b4e9ed2b0928fec30f93ee693b3aa68b3",
+    "size": 895
+  },
+  {
+    "path": "flight/D435i过门建图.md",
+    "mode": 420,
+    "sha256": "94a4d5757cc8559feee333507fa1cb2cfd1128597f0c2d85c1ca191fc71d376f",
+    "size": 8877
+  },
+  {
+    "path": "flight/basic_entry.py",
+    "mode": 493,
+    "sha256": "6c46b9b6f08441f9d358bcc6789f67b63caf60fcaa6a31f52eabb5330b989388",
+    "size": 2283
+  },
+  {
+    "path": "flight/check_neural_depth.sh",
+    "mode": 420,
+    "sha256": "974c110b84439ef2ccea257c37ee1caa3c692005b0a61d0aec0d41bd4047f545",
+    "size": 1287
+  },
+  {
+    "path": "flight/delivery.yaml",
+    "mode": 420,
+    "sha256": "c6ff1d682d080e840ceec2b1403e09747d2894dfdedd6e23da58961274f846dc",
+    "size": 2082
+  },
+  {
+    "path": "flight/depth_rectified.yaml",
+    "mode": 420,
+    "sha256": "f7c2f297eed0be86cb9be447e626afa99e96980211bb2a087e06189988f7e450",
+    "size": 21567
+  },
+  {
+    "path": "flight/ego_land.sh",
+    "mode": 420,
+    "sha256": "57266639f9595464a6f2cc1daad06146766d2714e2bed46a30f48f9f5aca2456",
+    "size": 398
+  },
+  {
+    "path": "flight/ego_landd435i.sh",
+    "mode": 493,
+    "sha256": "253dacedced03b0007ea8480ed23edc663b0d003e499da43517e883e69d925c1",
+    "size": 402
+  },
+  {
+    "path": "flight/ego_rviz.launch",
+    "mode": 420,
+    "sha256": "c190aacace0a102dbc042043b32affae3686e7f9f3507306953c7a829667230f",
+    "size": 1450
+  },
+  {
+    "path": "flight/ego_rviz.rviz",
+    "mode": 420,
+    "sha256": "236099ffb955a3040a18e613191520919bd3c6e3c045f58407900c50ae1c837a",
+    "size": 13116
+  },
+  {
+    "path": "flight/ego_three_points.py",
+    "mode": 420,
+    "sha256": "911d7873321aba9c0184e73a5559fd0d8869664fea0c56b6f4e07dadbbc7f4e7",
+    "size": 10684
+  },
+  {
+    "path": "flight/entry.py",
+    "mode": 420,
+    "sha256": "8b9b516f3f46659e7a91693dc33017964af314376952c9908876778cf6381877",
+    "size": 14769
+  },
+  {
+    "path": "flight/pid_autotune.py",
+    "mode": 420,
+    "sha256": "8d570c30b3f8e15bd8c9421e2d003d06385bf588f8d9e1b1dd67d6013fc0e1e4",
+    "size": 30364
+  },
+  {
+    "path": "flight/servo.sh",
+    "mode": 493,
+    "sha256": "c69b5edd11f3360267670ee5018e27d4b49643a807d26eed6e58487285821a21",
+    "size": 457
+  },
+  {
+    "path": "flight/servo_reset.sh",
+    "mode": 493,
+    "sha256": "b3d1b2b347f6fe38225cd18b375269ac91b4dd98dfd733a0a340104c922b691f",
+    "size": 299
+  },
+  {
+    "path": "flight/servo_test.py",
+    "mode": 420,
+    "sha256": "3227ffe8c925c76aed14697ec52bb3ef1bbbfd96a8cfae9d561e1fda2ef56637",
+    "size": 12154
+  },
+  {
+    "path": "flight/test.yaml",
+    "mode": 420,
+    "sha256": "63c1f1aae736e7c38ebead418c2a4b932b4b604bcbbebd136412dd1d135be61a",
+    "size": 974
+  },
+  {
+    "path": "flight/test_pid_autotune.py",
+    "mode": 420,
+    "sha256": "9c7f4e5605b5d15a2e229bf09e9575c303e3a6f6bc5da23326b4050c3ed61885",
+    "size": 8818
+  },
+  {
+    "path": "flight/手持D435i检查.md",
+    "mode": 420,
+    "sha256": "41ac45d79e25ae8fa9371b5ea7b5c6b99d2be426677c48a5117b5251cf2f8446",
+    "size": 8041
+  },
+  {
+    "path": "flight/穿门网络试验.md",
+    "mode": 420,
+    "sha256": "120f0a9339e8fc86176b248cf666742c5694086a3a9c3e018ea3690ed9dace4a",
+    "size": 32049
+  },
+  {
+    "path": "models/README.md",
+    "mode": 420,
+    "sha256": "e9f877d44f7a2df9f3c2a3c842709fdd54c7a50d568a0eef05582185b5fba1b7",
+    "size": 2994
+  },
+  {
+    "path": "models/SHA256SUMS.txt",
+    "mode": 420,
+    "sha256": "df421bffa5f2825873993226926e2b5483d32ef74af3990921947308e66c346f",
+    "size": 3521
+  },
+  {
+    "path": "models/d435i_yolo11n_20261004/SHA256SUMS.txt",
+    "mode": 420,
+    "sha256": "89dffe5635fe28d568f7ebe9bddfbefb96c1ef832edf2a309b43ceac53cd3920",
+    "size": 90
+  },
+  {
+    "path": "models/d435i_yolo11n_20261004/classes.txt",
+    "mode": 420,
+    "sha256": "3155afceb703bba92339a83bb07e0f4c1e11eaba6a7e84125af2a67cc8c0d5f7",
+    "size": 33
+  },
+  {
+    "path": "models/d435i_yolo11n_20261004/d435i_yolo11n_best.onnx",
+    "mode": 420,
+    "sha256": "d1052baa3eaaf00563b6af13c785b157c62d733acda8873d346ee70f0d96a304",
+    "size": 10566350
+  },
+  {
+    "path": "models/d435i_yolo11n_20261004/model_metadata.json",
+    "mode": 420,
+    "sha256": "1bd2a78184ef768e39cf6a3ab91dd3f2881a3b939febae0907930f54a4ad9993",
+    "size": 877
+  },
+  {
+    "path": "models/df200_yolo11n_20261004/README.txt",
+    "mode": 420,
+    "sha256": "9d5b85455287df6fe20676f57434fef19570c4daafba5f59387a4f8d1736e36a",
+    "size": 332
+  },
+  {
+    "path": "models/df200_yolo11n_20261004/SHA256SUMS.txt",
+    "mode": 420,
+    "sha256": "907e487b3c0cd61021d9d9f7f60298fc3523d2e65e94f6db418c2cae6f9b81f4",
+    "size": 90
+  },
+  {
+    "path": "models/df200_yolo11n_20261004/classes.txt",
+    "mode": 420,
+    "sha256": "1ef27dc531f164971c09e8cf7e74a39353ff12448efb6b1d9205e0e4711e73f0",
+    "size": 57
+  },
+  {
+    "path": "models/df200_yolo11n_20261004/df200_yolo11n_best.onnx",
+    "mode": 420,
+    "sha256": "6713be1a142f5315bfe34bc69f6660e42443e1fe9aed5d8237cd6457d1a97f4f",
+    "size": 10568741
+  },
+  {
+    "path": "models/df200_yolo11n_20261004/model_metadata.json",
+    "mode": 420,
+    "sha256": "b7ebcf7a1e071e7d8722e07fa768eb41218475288819723f8bac79756c94888e",
+    "size": 1356
+  },
+  {
+    "path": "models/df200_yolo_lite_20261005/SHA256SUMS.txt",
+    "mode": 420,
+    "sha256": "4c02208bff1f377a8bbc964a2131ca516243a5d46a1df1ca45d41d1addcdf3b7",
+    "size": 87
+  },
+  {
+    "path": "models/df200_yolo_lite_20261005/classes.txt",
+    "mode": 420,
+    "sha256": "1ef27dc531f164971c09e8cf7e74a39353ff12448efb6b1d9205e0e4711e73f0",
+    "size": 57
+  },
+  {
+    "path": "models/df200_yolo_lite_20261005/deployment.json",
+    "mode": 420,
+    "sha256": "34443d39b9e04dd0c51ba09d1713c131980aed55c845458c74b59283e473317e",
+    "size": 556
+  },
+  {
+    "path": "models/df200_yolo_lite_20261005/down_416_deploy.onnx",
+    "mode": 420,
+    "sha256": "d71920474cef41eb2049004546537d1880706df2d683a1d4db6a87e2f0f9ae88",
+    "size": 2237101
+  },
+  {
+    "path": "models/diffphys_door/SOURCE.md",
+    "mode": 420,
+    "sha256": "8b6c512f3e62e539e165f76539bb0301ca95effca7fd40b12c8dc008f26ec2e6",
+    "size": 5095
+  },
+  {
+    "path": "models/diffphys_door/diffphys_base.onnx",
+    "mode": 420,
+    "sha256": "1b9689b5b3cd34f0dc0a7848aeba14d5f25f2065fa32733d0d77b9794719f190",
+    "size": 2061509
+  },
+  {
+    "path": "models/yolo11n_20261013/down/classes.txt",
+    "mode": 420,
+    "sha256": "1ef27dc531f164971c09e8cf7e74a39353ff12448efb6b1d9205e0e4711e73f0",
+    "size": 57
+  },
+  {
+    "path": "models/yolo11n_20261013/down/down_yolo11n_best.onnx",
+    "mode": 420,
+    "sha256": "8964730159de42dc4ec4cbc4741aea0d9f8fde327d8448848969293c9a84cae1",
+    "size": 10568702
+  },
+  {
+    "path": "models/yolo11n_20261013/down/model_metadata.json",
+    "mode": 420,
+    "sha256": "51fac2774bbe5a2c703157863e1df1750ff8c2aaef159c10e10d8c0418dbdd22",
+    "size": 20530
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/SHA256SUMS.txt",
+    "mode": 420,
+    "sha256": "d1c159c9dfbb1d9b37358567ae7d5e2b3d0f164fae479fc4073798bc8fe637d6",
+    "size": 720
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/down/classes.txt",
+    "mode": 420,
+    "sha256": "1ef27dc531f164971c09e8cf7e74a39353ff12448efb6b1d9205e0e4711e73f0",
+    "size": 57
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/down/down_yolo11n_best.onnx",
+    "mode": 420,
+    "sha256": "6b9fe8e20725b7617ff3afcb79129304a46044a6278095f91bf40e57faf42ddd",
+    "size": 10568724
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/down/model_metadata.json",
+    "mode": 420,
+    "sha256": "dd76927ab328c065072ba6f97b26fd3d32ad3ffaeb93efd9011aaf789c1d9483",
+    "size": 29938
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/front/classes.txt",
+    "mode": 420,
+    "sha256": "3155afceb703bba92339a83bb07e0f4c1e11eaba6a7e84125af2a67cc8c0d5f7",
+    "size": 33
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/front/front_yolo11n_best.onnx",
+    "mode": 420,
+    "sha256": "97dacb8b724cba01a6927ba3f4cbb8ea984d8ce21b3d3cc87db5a4981668874b",
+    "size": 10566326
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/front/model_metadata.json",
+    "mode": 420,
+    "sha256": "7c4d1d6924eb2b014e405bbd2a697a9ac755ef7a6bcca03365108be213884c33",
+    "size": 12853
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/release_manifest.json",
+    "mode": 420,
+    "sha256": "bcf04bfe89521abade3da75ae77941139c9a174e4886f02884e1aca9fe184a5f",
+    "size": 1151
+  },
+  {
+    "path": "models/yolo11n_20261014_filtered/训练结果与限制.txt",
+    "mode": 420,
+    "sha256": "fe6b55b11a260eefe00d97c00d6a6d47e36083693044efdbabe24e0f2261dea2",
+    "size": 3253
+  },
+  {
+    "path": "models/yolo11n_20261016/down/README.md",
+    "mode": 420,
+    "sha256": "720d718c35aa76015b69ec7e277753447aa147c1ab71c6303691818547f323a4",
+    "size": 884
+  },
+  {
+    "path": "models/yolo11n_20261016/down/SHA256SUMS.txt",
+    "mode": 420,
+    "sha256": "c73632345aad5587f9a723d089f91feed9a545daba3ce7f8be01405a4520eaf7",
+    "size": 329
+  },
+  {
+    "path": "models/yolo11n_20261016/down/classes.txt",
+    "mode": 420,
+    "sha256": "1ef27dc531f164971c09e8cf7e74a39353ff12448efb6b1d9205e0e4711e73f0",
+    "size": 57
+  },
+  {
+    "path": "models/yolo11n_20261016/down/down_yolo11n_best.onnx",
+    "mode": 420,
+    "sha256": "3cce09ea1703997329580df205fd5f2d3f695b1cfb691750eaefb0595d61d414",
+    "size": 10568714
+  },
+  {
+    "path": "models/yolo11n_20261016/down/model_metadata.json",
+    "mode": 420,
+    "sha256": "2ef44003f887982568ebca624372c4873c7fa2e948cc3501ebc853d62d2c98b7",
+    "size": 1381
+  },
+  {
+    "path": "scripts/migrate_flight_tuning.py",
+    "mode": 420,
+    "sha256": "33cea44fabccf5c14560cc17196f2446234520b553b82663fb409944dc509890",
+    "size": 14923
+  },
+  {
+    "path": "scripts/setup_yolo_fast.sh",
+    "mode": 420,
+    "sha256": "6ac8e2cb786fc5d55c37e79e61e341df4bd6912855d1561ffac1f5ca20e6b38c",
+    "size": 1461
+  },
+  {
+    "path": "sim/neural_door_sitl/.gitignore",
+    "mode": 420,
+    "sha256": "d42da66e1d91a3b7623c901d68e864a62e0d6204f856a499a779dcf79cf26d6c",
+    "size": 30
+  },
+  {
+    "path": "sim/neural_door_sitl/README.md",
+    "mode": 420,
+    "sha256": "bd2369adc361ac9d21e4355542490ef395d510207df61558fba6e95bc1c48d0b",
+    "size": 6833
+  },
+  {
+    "path": "sim/neural_door_sitl/configs/baseline.json",
+    "mode": 420,
+    "sha256": "aa78097ee62c54d2242d5c5d5bb54501530a24682841abefe5c9e12e2ee197eb",
+    "size": 2716
+  },
+  {
+    "path": "sim/neural_door_sitl/configs/provenance.json",
+    "mode": 420,
+    "sha256": "c653cbc9238a8f2d0207134358377ebc9ca9e6c59e5128a46a6611b381235651",
+    "size": 897
+  },
+  {
+    "path": "sim/neural_door_sitl/configs/px4_control_baseline.json",
+    "mode": 420,
+    "sha256": "693d9a6745c29fd56c68d8b572fd5476de70ef6abd243ebbd1288a48f84f0e64",
+    "size": 2708
+  },
+  {
+    "path": "sim/neural_door_sitl/configs/px4_parameters_20261007.json",
+    "mode": 420,
+    "sha256": "56553f420e73e1bc101803d168d507f8410b57198cdef9b804422eff8534b44a",
+    "size": 25511
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/__init__.py",
+    "mode": 420,
+    "sha256": "190f249ce8248f40ca438c2509fa288db1873a209b760cccc2e2bba5dd7232ff",
+    "size": 73
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/checks.py",
+    "mode": 420,
+    "sha256": "3cbfc72b1641a9c5a60d5ca83b9dbfc7314a9a0bda16215ba1a6bbde0e35789b",
+    "size": 4271
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/common.py",
+    "mode": 420,
+    "sha256": "1bdeb0da1a48347417e53b60e0150460116f7729bf8aaf20ef79dca4a694d170",
+    "size": 1869
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/engine.py",
+    "mode": 420,
+    "sha256": "c383afbef213b7b503148500ad0f4f8c80d15395e087c217253b50386838e720",
+    "size": 16782
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/policy.py",
+    "mode": 420,
+    "sha256": "edf4b76b746a59659accfea170a9e11baea55b9718239111e012751832863310",
+    "size": 3508
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/replay.py",
+    "mode": 420,
+    "sha256": "d0e7606f01af46206fc0354dd7f5a2f6c76878bb2f9548aa7766079338c476b8",
+    "size": 7236
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/scene.py",
+    "mode": 420,
+    "sha256": "cacd23565dfbfe0842074afdd695ae1dfee9c96c315ecc1c92a36dffb090e43d",
+    "size": 8836
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/search.py",
+    "mode": 420,
+    "sha256": "c43e495ab1802eb5e920f257cdb1ef9db3d0d80870f13e33b03593149ee5fe8a",
+    "size": 10283
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/transport.py",
+    "mode": 420,
+    "sha256": "a013856068cd94dd80b43819d92202419a1a5e0e83b8c354d981c16bf1a1da2b",
+    "size": 6135
+  },
+  {
+    "path": "sim/neural_door_sitl/neural_sitl/world.py",
+    "mode": 420,
+    "sha256": "7f939f08ef171c78eb7f5fe494a146620c8c697165716552e75edbca7329601b",
+    "size": 7059
+  },
+  {
+    "path": "sim/neural_door_sitl/requirements.txt",
+    "mode": 420,
+    "sha256": "2e16ec27dece22fd7fe80fa503c03a6e386ab8e7e7bc5a561db5ecf135121877",
+    "size": 188
+  },
+  {
+    "path": "sim/neural_door_sitl/scripts/analyze_trial.py",
+    "mode": 420,
+    "sha256": "21ab53db91ab6c0e0902f97679461d304488aa4cf0e57102182fcea43f9152dd",
+    "size": 4566
+  },
+  {
+    "path": "sim/neural_door_sitl/scripts/build.sh",
+    "mode": 420,
+    "sha256": "de6be2aa56ca636be8be028d4acde9ace7de3dc37c99d76316ea67ce155b3fad",
+    "size": 961
+  },
+  {
+    "path": "sim/neural_door_sitl/scripts/provision.sh",
+    "mode": 493,
+    "sha256": "a017ad327f03a8a8d9437374793c54809571eaa3c908baa22fdb632ce513ad34",
+    "size": 2336
+  },
+  {
+    "path": "sim/neural_door_sitl/scripts/render_probe.py",
+    "mode": 420,
+    "sha256": "4ec768556b1f7be23cabf2a6d004daf168e031f1eb098852e19180b6e9d0a011",
+    "size": 3080
+  },
+  {
+    "path": "sim/neural_door_sitl/scripts/summarize.py",
+    "mode": 420,
+    "sha256": "bedbb7ab18193337cca4c1c300385b15cf1a8909dea1f92eebb31e1cf7cd5352",
+    "size": 15036
+  },
+  {
+    "path": "sim/neural_door_sitl/sitl",
+    "mode": 493,
+    "sha256": "5499ba0595e3acabc1259c840e77a2c67fb60640fd0704861d2e3938141cf365",
+    "size": 201
+  },
+  {
+    "path": "sim/neural_door_sitl/sitl.py",
+    "mode": 420,
+    "sha256": "0aca9d787e36f34a71a2afd342877650df74baed0e78585adaaaabab8b0eca08",
+    "size": 5145
+  },
+  {
+    "path": "sim/neural_door_sitl/tests/test_invariants.py",
+    "mode": 420,
+    "sha256": "f7103fff264137a41df876702bad918ee254b64f7e5193b1b6a364dc55ffe1fa",
+    "size": 5465
+  },
+  {
+    "path": "src/airseafly_front_goal/CMakeLists.txt",
+    "mode": 420,
+    "sha256": "bc8dad4e53c4863b7b3a9179a03d252e83c2ae5611acd1eaa1bddaf3433f4a7c",
+    "size": 978
+  },
+  {
+    "path": "src/airseafly_front_goal/config",
+    "mode": 493,
+    "link": "../../config/packages/airseafly_front_goal"
+  },
+  {
+    "path": "src/airseafly_front_goal/launch/camera.launch",
+    "mode": 493,
+    "link": "../../../config/cameras/front.launch"
+  },
+  {
+    "path": "src/airseafly_front_goal/launch/down_verify.launch",
+    "mode": 420,
+    "sha256": "c01d49144a26df7bf6c0b5a777d7a32fb7397a417c2a8f486d15c8307b42772b",
+    "size": 3298
+  },
+  {
+    "path": "src/airseafly_front_goal/launch/front_goal.launch",
+    "mode": 420,
+    "sha256": "6f79791e10d57e107b280d7df9257fbec95e1f1c496e7d4bfbfbbf489af1172c",
+    "size": 1095
+  },
+  {
+    "path": "src/airseafly_front_goal/launch/front_verify.launch",
+    "mode": 420,
+    "sha256": "01eed297ef141edf7bba0e91304a522ac6506e99a2593b6a809947ccf2a5718e",
+    "size": 3044
+  },
+  {
+    "path": "src/airseafly_front_goal/launch/front_verify_yolo11n.launch",
+    "mode": 420,
+    "sha256": "80379d185b821ef33cc95c40d4ed72b4306dce3498d69e1e63898dd9351ce11a",
+    "size": 1985
+  },
+  {
+    "path": "src/airseafly_front_goal/launch/front_yolo_only.launch",
+    "mode": 420,
+    "sha256": "4286b3a990fcf92c107b4e7db7f13a8c5a7a12b79b68eff8bf990518f5d839be",
+    "size": 2059
+  },
+  {
+    "path": "src/airseafly_front_goal/launch/hand_down_camera.launch",
+    "mode": 493,
+    "link": "../../../config/cameras/down.launch"
+  },
+  {
+    "path": "src/airseafly_front_goal/package.xml",
+    "mode": 420,
+    "sha256": "852ff77ec6047ccc9d522e6cf578e2249f4fa05c5432bba075aabbf7769b4205",
+    "size": 1011
+  },
+  {
+    "path": "src/airseafly_front_goal/rviz/front_verify.rviz",
+    "mode": 420,
+    "sha256": "ba3a019e0594e637a1750fb3ac3fdb2e86b714c6196be4f0e5740b64a7bc7575",
+    "size": 1191
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/benchmark_yolo_backends.py",
+    "mode": 420,
+    "sha256": "c07867bd8ae22ce4558291b88fe1ad9ccf7733292b320d6a19d836e3304cde6b",
+    "size": 5408
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/check_front_verify_model.py",
+    "mode": 493,
+    "sha256": "9c6207c3480b5c914d7914e1c69da01249058d594ea76a78ce9ead629f5d8c9c",
+    "size": 2276
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/down_verify_detector.py",
+    "mode": 493,
+    "sha256": "3487e62365ffc39724bbca1ae1adc17f91bcab168d66156be002967da22f2496",
+    "size": 4501
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/front_goal_node.py",
+    "mode": 493,
+    "sha256": "1f9e5177d52f9d8e62dc6c7bb8d1c686395537a7fc8646f2c22a4834f2513116",
+    "size": 30633
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/front_verify_monitor.py",
+    "mode": 493,
+    "sha256": "430ad2782167a202f26b91ffa2eefae74185f0e6a478ac04ad6162e88999e3e1",
+    "size": 1500
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/front_verify_preview.py",
+    "mode": 493,
+    "sha256": "ab591051652d8e5907c18e027c0405bbddd03dc92bd7a7e211d683bb1e085c14",
+    "size": 6678
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/front_yolo_detector.py",
+    "mode": 493,
+    "sha256": "44a781f9d8f831bad6f51d1c15fc119e236b00f79a8d237303e31ce9cec160c7",
+    "size": 4924
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/hand_verify.py",
+    "mode": 493,
+    "sha256": "7e148b2b34e5c28cdc38380d0323a9d7aa293be188ce34c63fad894c071afd27",
+    "size": 13618
+  },
+  {
+    "path": "src/airseafly_front_goal/scripts/measure_vision_runtime.py",
+    "mode": 420,
+    "sha256": "ee99fa8daeffabb9966d659e5974da2c428f64d5268ef855403d43622db4e25b",
+    "size": 4079
+  },
+  {
+    "path": "src/airseafly_front_goal/setup.py",
+    "mode": 420,
+    "sha256": "56d4baa847275502a74abfa9245b686e43c09310ae9b7eb66c83151e84a6094b",
+    "size": 212
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/__init__.py",
+    "mode": 420,
+    "sha256": "b0b927cc7bb51c3be583f927ea640e9876a12dc881c8352236dd99b33c29053c",
+    "size": 65
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/calibration.py",
+    "mode": 420,
+    "sha256": "39874d39f3afb479d86a77816744d76df71eb7bf49c54c5569f9796312e1aa98",
+    "size": 2040
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/detector.py",
+    "mode": 420,
+    "sha256": "ae783f4381f1d18fbd98cadf5362f7de3a783fa2f7a84d9dcf487af2f86c3739",
+    "size": 18877
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/down_preview.py",
+    "mode": 420,
+    "sha256": "74dafaf3296f3fc42e23e23f85d84e09c48fff70ee089635aa9190da79c59012",
+    "size": 3718
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/geometry.py",
+    "mode": 420,
+    "sha256": "69659d41b747e2e6c8c474979348beb1cf73ebde8f113837cfd44e948d6f2ad0",
+    "size": 12061
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/goal_queue.py",
+    "mode": 420,
+    "sha256": "156013c63045740bffb73320953471cfc2dd0225fed6f3c1ed7eba779f47b0e5",
+    "size": 3336
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/hand_display.py",
+    "mode": 420,
+    "sha256": "ee40c83a62baefe8a1e8504740fc2eb782fef0c3d805707762d1ad58b876463c",
+    "size": 7406
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/hand_log.py",
+    "mode": 420,
+    "sha256": "18eb9f59ac64ec9d8624c36a68a0aab618d9ae079332b40dc290698e0b9a1b70",
+    "size": 2996
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/hand_monitor.py",
+    "mode": 420,
+    "sha256": "373655a18bb26186e76780aa803bbf9eb1a328c7f9a94fdf79e4fd2f5e628e89",
+    "size": 15381
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/hand_processes.py",
+    "mode": 420,
+    "sha256": "3d80c28c65f73f97b1e0bdddefaaf59ef8e39030c33624157a5b94ef96838fba",
+    "size": 6326
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/hand_registry.py",
+    "mode": 420,
+    "sha256": "4e00ba5196cfcf64af79f41cef43043376f6a2af3116dc51298217513b39f4d3",
+    "size": 11501
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/hand_windows.py",
+    "mode": 420,
+    "sha256": "a9326363ecd64bf88e1ea614a9bf4bf119a8bc9b435e2b5c72386493cf82135f",
+    "size": 8421
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/live_preview.py",
+    "mode": 420,
+    "sha256": "dfd41a2bbb4a17ca2278ae195be56b29d60ccb7c45b0f64465e8273103ae6ccd",
+    "size": 5176
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/tracking.py",
+    "mode": 420,
+    "sha256": "661dce4ded33d6995209f9bc5de936107ae867cc25f7f2ce62ec2bef392bff70",
+    "size": 7993
+  },
+  {
+    "path": "src/airseafly_front_goal/src/airseafly_front_goal/walk_verification.py",
+    "mode": 420,
+    "sha256": "c66ac8d7a56f10c0bdd5b0460ed97c377830186e652f1a319617b77e0045977d",
+    "size": 6106
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_calibration.py",
+    "mode": 420,
+    "sha256": "b379192753407c590e360625f5285b75e2137df86d4193d1f541d9bf3e3b01d8",
+    "size": 9137
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_detector.py",
+    "mode": 420,
+    "sha256": "29cda269569c6e1d17619e383c57289f4f434b18a756a97ee8b9bb5bd4bbe6eb",
+    "size": 7541
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_down_preview.py",
+    "mode": 420,
+    "sha256": "e9e007b8aebfdada37c0cac58c750a3925ec22b3381f11470f70b6cd444308b2",
+    "size": 10859
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_duplicate_boxes.py",
+    "mode": 420,
+    "sha256": "8e7a9954fa9b21324fb7024f4e913d6db11a743e8d8768eda38bc9ce8bf4646d",
+    "size": 2225
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_front_goal_node.py",
+    "mode": 420,
+    "sha256": "18eef059ff059c5341993060f0977ff82b5bcc905170265896d80f8928b1be29",
+    "size": 31101
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_front_yolo_only.py",
+    "mode": 420,
+    "sha256": "511bb986876b1d0cf0e32e8ac907516d4944c1237fa53b920c1a552bab93d026",
+    "size": 5196
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_geometry.py",
+    "mode": 420,
+    "sha256": "a22519cc151874d47db1603ca6a188c1f7b2964b3c9aa322daeae566acd475ad",
+    "size": 7919
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_goal_queue.py",
+    "mode": 420,
+    "sha256": "c99bf8fc63eebd004ef7118f4415ba2feee6a18cc626d4caf93a4e52ea3e85e8",
+    "size": 9527
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_hand_monitor.py",
+    "mode": 420,
+    "sha256": "77e94b045889496819003ce09c8a2aa22ef89e248af7b1b2613c045d84a5aa91",
+    "size": 6726
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_hand_registry.py",
+    "mode": 420,
+    "sha256": "1d64dbb9edd19dac5b79b8c3132c8e1fdc3b10af52e7530e29563f066a196095",
+    "size": 10697
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_hand_startup.py",
+    "mode": 420,
+    "sha256": "4dcf1f84d57a1f2e4ea35706d3d69dc2add2137608c1e99a7c72d98e9422bb74",
+    "size": 6880
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_launch_contracts.py",
+    "mode": 420,
+    "sha256": "cca341ff30f2dfe4ff6ec02617e4a513dfeb3576b6ebf59e4b0c2717e46e599e",
+    "size": 14499
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_live_preview.py",
+    "mode": 420,
+    "sha256": "16231e0a90ae14bf088052b678b1452b436274b82407a676ba0cf05e6763d33d",
+    "size": 6305
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_openvino_backend.py",
+    "mode": 420,
+    "sha256": "ee35ba416a4c527b8cdc4e0aa1ebe63f05004cebd9deda36a3e8be79c7ae4d00",
+    "size": 5584
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_tracking.py",
+    "mode": 420,
+    "sha256": "04e48c99ea9e57b74ab1c3d36103dd5630d406d6709e3fec93555ca176080663",
+    "size": 7264
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_walk_verification.py",
+    "mode": 420,
+    "sha256": "7a81e7301786b9ce25a279ccacf49e8b6ab0068772ccc6edd5dda7862362536b",
+    "size": 3049
+  },
+  {
+    "path": "src/airseafly_front_goal/test/test_yolo_raw.py",
+    "mode": 420,
+    "sha256": "8b3838a7a4105ef98843919fd0dc08d970073cf80958b95229e2c8dda50be6e5",
+    "size": 2693
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/CMakeLists.txt",
+    "mode": 420,
+    "sha256": "f71cd05d6cfa9899ee8f8634aa949691dff85989517025cba0e8ee351859b130",
+    "size": 330
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/config",
+    "mode": 493,
+    "link": "../../config/packages/airseafly_obstacle_mission"
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/launch/mission.launch",
+    "mode": 420,
+    "sha256": "406c351e7bd739c060619974a778d0c9d2d5f028a46079336346ecd877e2de2f",
+    "size": 324
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/package.xml",
+    "mode": 420,
+    "sha256": "62ff0b8274ead6e288c5ef706a2bd26700e273122e850f6e08b9151612c96e70",
+    "size": 870
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/scripts/obstacle_mission.py",
+    "mode": 493,
+    "sha256": "f36eb0cf7cd2b847020585b0ae1fbd4047f13e4a5bca298d610f45c7675d4f6d",
+    "size": 6182
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/setup.py",
+    "mode": 420,
+    "sha256": "26e231bf091c2d0910e2d39d1e4a34fd15d8231ce5899e78652bef903c80cf80",
+    "size": 191
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/__init__.py",
+    "mode": 420,
+    "sha256": "abfb4381c956f1a4177e6377d5ad174366c68c150d33963615da795453cd1464",
+    "size": 76
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/configuration.py",
+    "mode": 420,
+    "sha256": "c4a49f320f315e67bf70238a3ad80369128c92f56fa6f4b375d22c55fba60f37",
+    "size": 2541
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/core.py",
+    "mode": 420,
+    "sha256": "655b4f2885f6cea4f84508bed8ea9ec1d6c350a6a875cac95514245d6bd9086b",
+    "size": 13855
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/interfaces.py",
+    "mode": 420,
+    "sha256": "81a702c19180699d9ed413ec44b93dbb139358af7b2db9ab09874a75e279f3ea",
+    "size": 3030
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/lidar_geometry.py",
+    "mode": 420,
+    "sha256": "69cf7e7805b5a94d92074cdef5f20ddc1f1d5984864401474a227495371f61f0",
+    "size": 22049
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/perception.py",
+    "mode": 420,
+    "sha256": "f9ba5ac5e26fb7696bccae39e66190e4ee8c8ff7f7ddcc78b5e302918fe73dc9",
+    "size": 2704
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/planner_launch.py",
+    "mode": 420,
+    "sha256": "1076934c37dcfdf73415a6e7bf607bbb7c03ac3b239514acbb80d50b2b79636d",
+    "size": 7363
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/processes.py",
+    "mode": 420,
+    "sha256": "4816cee2a124c333a66524d49eaaa5e21dd4ab57ea0789601d387e99f46cb5cc",
+    "size": 4195
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/replay.py",
+    "mode": 420,
+    "sha256": "4ae34e29728846aee4967dc5711ec4ced80b698531ddf363556ae1de52f504d6",
+    "size": 5235
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/ros_node.py",
+    "mode": 420,
+    "sha256": "3a841709c09a0d388c2e94be265320818c46800866427846f6a76664a425846b",
+    "size": 23816
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/src/airseafly_obstacle_mission/spatial.py",
+    "mode": 420,
+    "sha256": "9e8792a1009ee70c8e0a487d0e355cdd723c9b3f789b7e6c59629d9847b91334",
+    "size": 9269
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/test/fixtures/advanced_param_exp.xml",
+    "mode": 420,
+    "sha256": "fa830fc0215f64afcd4d7f87581bec18f062c928748d6ece84da8f62583af2d3",
+    "size": 1196
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/test/test_entry.py",
+    "mode": 420,
+    "sha256": "9570b3e29a7f7beb0df52aa04275b9dffbbc8b312254a23a74a6741ddd5fe382",
+    "size": 3445
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/test/test_obstacle.py",
+    "mode": 420,
+    "sha256": "1ddc3eb5b53ed2f4cae9b09472a8d7a6333b102c925e584222dddb1cc31398c2",
+    "size": 15521
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/test/test_processes.py",
+    "mode": 420,
+    "sha256": "b812cdccc648e4b3a63e7776ffe4e9488768529057c5dad16595018e079d3ba7",
+    "size": 2044
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/test/test_ros_adapter.py",
+    "mode": 420,
+    "sha256": "416c88ce1eda25aa11d60a908e2b9ab7465c30a05112b84e4898d0f5735f7c23",
+    "size": 9115
+  },
+  {
+    "path": "src/airseafly_obstacle_mission/使用说明.txt",
+    "mode": 420,
+    "sha256": "3b4dbac3e2d4f0e13d53d7ce63ee9401ce4821fb4c6b5f72300eaf4e6677a6b8",
+    "size": 168
+  },
+  {
+    "path": "src/airseafly_real400_mission/launch/down_kcf_verify.launch",
+    "mode": 420,
+    "sha256": "05f02d63f13f8f40eccef9a4e54d81a7dd85348e4b16c521ac144d6f3753313f",
+    "size": 3257
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/copy",
+    "mode": 493,
+    "sha256": "3212cd3053a9b67eb0ecf4f59525fd69d531255c044824f6e7bad5fbbd84ceeb",
+    "size": 35630
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/copy_gate_geometry.py",
+    "mode": 420,
+    "sha256": "b7bf6ebecf26b37dd1756f3fa867222da7624ee5ea26732bd3f437bacdafa97c",
+    "size": 348
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/copy_gate_trial.py",
+    "mode": 420,
+    "sha256": "3c21cb667849513a0e39b69e47c73e0a813783c6339fe0997a33021627ed66ef",
+    "size": 19387
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/depth_planning_cloud.py",
+    "mode": 493,
+    "sha256": "948b7237c35381cde1f2394d061a77f965663db23c7f2a15d3010b24a144a7f2",
+    "size": 319
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/down_kcf_verify.py",
+    "mode": 493,
+    "sha256": "d0b29b849c91214337a401484d4e9db04d930fec320c5b66ed2ca33f5fb43f1c",
+    "size": 6641
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/field_test.py",
+    "mode": 420,
+    "sha256": "c2cfa639908dc5eadbfef7dc0c8ad5aeb4dff8ff51547b27fd7e09634ba64483",
+    "size": 215
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/flight_video_recorder.py",
+    "mode": 493,
+    "sha256": "54515e77337504cbcadaea6910d903f64a10701b1daea7ec37f462cc7d01e0bd",
+    "size": 15851
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/hover_pid_report.py",
+    "mode": 420,
+    "sha256": "47ba5d7a77dc5bb811a9d701bc0a5b6316fb21204d8c30e0bd1fe229064b3910",
+    "size": 16610
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/hover_pid_watch.py",
+    "mode": 420,
+    "sha256": "9317f508ff15417606ae32fbb6164e87ee07a002621ba9f9292b886a4157f00b",
+    "size": 15732
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/keyboard_control.py",
+    "mode": 493,
+    "sha256": "1b3cdd0360946e649202ad648e2ff3245fc92dc16447c2978813819526f41f23",
+    "size": 12964
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/mission_monitor.py",
+    "mode": 493,
+    "sha256": "ea3c94b952629da05bddf0d5d766f126cfd7d89463e7b99df1771093d1601259",
+    "size": 2459
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/payload_aim_calibration.py",
+    "mode": 493,
+    "sha256": "faf18f8159e13b35af4a6cc78617743c58af89dff8b129a6d6879d0837603bcb",
+    "size": 33024
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/record_hover_diagnostics.py",
+    "mode": 493,
+    "sha256": "1330f8f5dcb6e8759b911eb62ca9ef165d167afc631446c1a56eb769e576c766",
+    "size": 20383
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/rviz_goal_bridge.py",
+    "mode": 493,
+    "sha256": "245e524b2078892cfec9d03a65024909e0b64c4bc7c2b1245df86d935d614cd2",
+    "size": 11804
+  },
+  {
+    "path": "src/airseafly_real400_mission/scripts/vision_worker.py",
+    "mode": 420,
+    "sha256": "61fca313fec319df8f1c662ff410abcbe0e6e0ad1324c13ea6635e9f1d26f293",
+    "size": 20547
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/alignment_comparison.py",
+    "mode": 420,
+    "sha256": "5ae329701af3d81526ae865c7087fc3f4146c2e9d154c5597bced63e040a096c",
+    "size": 3944
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/camera_preflight.py",
+    "mode": 420,
+    "sha256": "338da37e2c71d7c24131029d57cbb6f89d8eed0e0d0899ce26305d53c1960e6c",
+    "size": 6695
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/continuous_search.py",
+    "mode": 420,
+    "sha256": "896b72fa4085c0a1fc9fbe35f2b1b74f517e04d1d0c3c2e861569fb8342bd62e",
+    "size": 3702
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/copy_waypoints.py",
+    "mode": 420,
+    "sha256": "4dc03da4232c0bc5c67a581de414ddedc3cb679cc6343a8e3883e4458bf0d254",
+    "size": 18919
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/delivery_fallback.py",
+    "mode": 420,
+    "sha256": "5c3e79450d836ec254a2114268699389016d735d23d2faeef463849d2daf30fc",
+    "size": 12168
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/demo.py",
+    "mode": 420,
+    "sha256": "1eb50a950e2b00971a14a846f078b5e06dcb0f2cda3b86ce60b6169807862e9c",
+    "size": 5104
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/depth_mapping_config.py",
+    "mode": 420,
+    "sha256": "e18e6a17fc2337373d2e8ffc6566ebebcc3cc26801701c8dbe7bbc6624f0fee9",
+    "size": 1625
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/depth_planning.py",
+    "mode": 420,
+    "sha256": "804fa0c27ca164e727492fd88076a26c277926b4da9ed284ddc2e0fbd49cd441",
+    "size": 6414
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/depth_planning_runtime.py",
+    "mode": 420,
+    "sha256": "65a282fcb885cf54db979205bef852d03c60caa2727e38b875c192bdc9f52295",
+    "size": 6620
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/door_detection.py",
+    "mode": 420,
+    "sha256": "a51389b1e61cf903a72e50a626dba581c745a081a9830af3fdc93e526446b549",
+    "size": 18525
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/down_association.py",
+    "mode": 420,
+    "sha256": "c14723ec659737085f8b1773f042f775240b0c91458769a643317798bc1df3f8",
+    "size": 1751
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/down_kcf_preview.py",
+    "mode": 420,
+    "sha256": "9cc594944f36d3261c4ff45406175af33caf69e52be170446b6b65ccdc1c49b7",
+    "size": 4905
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/down_models.py",
+    "mode": 420,
+    "sha256": "7f70b7737db3ac306f8da0341813add1b3216962cd75151e2bb1a75e379ec6cf",
+    "size": 2319
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/engine.py",
+    "mode": 420,
+    "sha256": "6e3b2a69216e2a33da51a87e1acec842c9415423ea9f1da7e6ca91829341948e",
+    "size": 97161
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/field_test_entry.py",
+    "mode": 420,
+    "sha256": "ef2cc422fc0a488d21a1a834fa0d7ece4dd5b1f0fe3be8856346bb83dc07b4fe",
+    "size": 45923
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/flight_recording.py",
+    "mode": 420,
+    "sha256": "2abed76b5568430be1173b10f078eda3d8bdcfc19fb8b865e97e6df3976b7582",
+    "size": 13031
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/h_landing.py",
+    "mode": 420,
+    "sha256": "2d33d9ab77ca62fde3f950dbb0f04e6f1939087e42186f3b6023f96976e5951d",
+    "size": 13276
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/hybrid.py",
+    "mode": 420,
+    "sha256": "163e461e523bd89fe0f6371997569a14cd7eedad805c21065dad191b517ba6c9",
+    "size": 18029
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/hybrid_vision.py",
+    "mode": 420,
+    "sha256": "e4e32644da36a0c5d05e43ec6ed5a986202d329d248be2cc7bb9000ede49cf00",
+    "size": 7593
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/keyboard_calibration.py",
+    "mode": 420,
+    "sha256": "755ae6ae0fbc337ee9b83308fa1463b21f38483654177419a3cfc45a0ecae056",
+    "size": 6769
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/keyboard_control.py",
+    "mode": 420,
+    "sha256": "5a5d92289c68853a339d755fb185015b378bfa4aab7893fcf5a9d6c5b20afd79",
+    "size": 9555
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/keyboard_ros.py",
+    "mode": 420,
+    "sha256": "274e218524b6f03eceb4644a108759a648bc907cf474cd96899c5742fcf9a0e8",
+    "size": 8577
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/mission_deadline.py",
+    "mode": 420,
+    "sha256": "5a53e23addf9a8029537ac63e69eb6665a1a4e62ada1c64ee08a7241d96a6547",
+    "size": 6365
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/mission_policy.py",
+    "mode": 420,
+    "sha256": "d5979b84ff3fa7049b4ce6bba70b65f0a98bd986d44f4ac9d867ec09f367cc7e",
+    "size": 9875
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/monitor.py",
+    "mode": 420,
+    "sha256": "71558a06e4999387c930d377831050f8dd018573223c17a9e87ce011c9850594",
+    "size": 12568
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/monitor_client.py",
+    "mode": 420,
+    "sha256": "05a344e5dcc3cac99ce2c66d2209ec6df55933a66bddd335ad23dda086b1f69f",
+    "size": 4157
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/native_copy.py",
+    "mode": 420,
+    "sha256": "331894b64dddb8caa7daf7d973818aed6b2afef9c628faf66f42151bf4ef3055",
+    "size": 29748
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/native_door.py",
+    "mode": 420,
+    "sha256": "20654a5f1ee0e63c9ffb699c0dfd2d700b3f5b8d97c3783de97466bdc2fa5298",
+    "size": 46747
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/native_h_landing.py",
+    "mode": 420,
+    "sha256": "b8a72d72a21ceefbf54b5e1d6ba65dbad12d2f44529f7e246852e884a9e59b02",
+    "size": 28851
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/navigation_goal.py",
+    "mode": 420,
+    "sha256": "ee1e82ad05ee445c8e87a775ff3008bf684cfd102597123dcfd18a33f47a78f7",
+    "size": 9898
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/neural_corridor.py",
+    "mode": 420,
+    "sha256": "b2f41d63da3f7fcdac161a15f064592c4eca146e73959522611d75b3cf5f0452",
+    "size": 16489
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/neural_depth_policy.py",
+    "mode": 420,
+    "sha256": "ed21825b1e4ce49e2e079fc1877411635b723a3657f318ac24eb5bd19fa2454b",
+    "size": 11706
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/neural_depth_recording.py",
+    "mode": 420,
+    "sha256": "2c32b0072915674ded287d941d4634c15d7b8128894d7314f23b3aa2640d03d6",
+    "size": 5111
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/neural_depth_rectification.py",
+    "mode": 420,
+    "sha256": "bff6f2dd13792ab738521f9adce38f36d3e6e6403661d63bc0cebf9f22caafc4",
+    "size": 5836
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/neural_depth_runtime.py",
+    "mode": 420,
+    "sha256": "4fc8c653723026bcedd9390995546107a7449c97a4ee1ae33073986fc7f8caa6",
+    "size": 23564
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/neural_door_search.py",
+    "mode": 420,
+    "sha256": "9814ab18defe26af2cc588032274b7df0af4b867a3e545839b715dc70d1f7f91",
+    "size": 9372
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/neural_policy_worker.py",
+    "mode": 420,
+    "sha256": "bd03ad98d510ce654a338142c11b7eeca62ea943487807387b361feb233d3239",
+    "size": 6505
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/outlet_geometry.py",
+    "mode": 420,
+    "sha256": "97a70f6b316ca7323c4a8d304bbf512943199a34b3a794584672dffe2451f140",
+    "size": 3045
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/payload_pd.py",
+    "mode": 420,
+    "sha256": "88a0be5da3eed7c7a4e3f82086ca5493df6dacea9458eba4abc98bf9db762423",
+    "size": 2023
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/preview.py",
+    "mode": 420,
+    "sha256": "22b7152299b1bf833bdc1d44b22ede49adaf91f2505abae4a95d74fad73a72c6",
+    "size": 2286
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/recording_client.py",
+    "mode": 420,
+    "sha256": "6acc8ff690eb24603e73d31f34c389ed3aa2db327fb77a8187f753eeb52092f7",
+    "size": 4489
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/route_coordinates.py",
+    "mode": 420,
+    "sha256": "15ba9d703b714c6bd962f362d88f534cea676872ca218d7141baebdebdad94ed",
+    "size": 7892
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/rviz_goal_bridge.py",
+    "mode": 420,
+    "sha256": "b443026164ee7cc40e4d273a9588cf753988ee145f0aa1f061c5dc6f19869848",
+    "size": 7628
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/sector_search.py",
+    "mode": 420,
+    "sha256": "438f7364331efb03f85fc1336fee9b6ec32717a3ae2d06c17bce23548fbb65a1",
+    "size": 3963
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/stereo_door_runtime.py",
+    "mode": 420,
+    "sha256": "93ff3de02c9528b0ced2572962c3371cc9a2bfe3a90c8c3a4db8ad2c36374847",
+    "size": 7592
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/tuning_defaults.py",
+    "mode": 420,
+    "sha256": "923b7fed67daab415092cefa375fc05b54dbe7e0fa763e3908f595eb1ca75e05",
+    "size": 5773
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/tunnel_tuning.py",
+    "mode": 420,
+    "sha256": "d2a53fbad9dda333d28c990b7af1042572a592599da24f94f66292f7460dfa54",
+    "size": 7938
+  },
+  {
+    "path": "src/airseafly_real400_mission/src/airseafly_real400_mission/vision.py",
+    "mode": 420,
+    "sha256": "fd69733d6f9b7ada7cd1876ca5932c5d7f4559230dd63d458e72ec8756f48bbf",
+    "size": 8655
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/benchmark_ego_down.py",
+    "mode": 420,
+    "sha256": "43fe629026018f7d5f08fea866420155abb100caf5169e57d78f4c45cfe59752",
+    "size": 9413
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/benchmark_mixed_groups.py",
+    "mode": 420,
+    "sha256": "b830bfeda98fad56a94bac063606679368fb35cbcdc60fccaca67a323573d97d",
+    "size": 15154
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/benchmark_workers.py",
+    "mode": 420,
+    "sha256": "73b8eb6394cb40fe57f84467badcd939c5279289cf6d28c3b369beaf1bbc17d8",
+    "size": 18800
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/fixtures/delivery_first_alignment_20261015.json",
+    "mode": 420,
+    "sha256": "a113a5e03d40aef54e11595c05bc2b1a81e9f773349160e4d8904afb2a1d3afd",
+    "size": 32866
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/fixtures/down_association_20261006.json",
+    "mode": 420,
+    "sha256": "e50e8170bafeeaba31f90c789db1ec390e1080e8854074e618bd9211090ab0a7",
+    "size": 3655
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/flight_entry_fixture.py",
+    "mode": 420,
+    "sha256": "5638ab1809cc078bec820be40aa7e2eba200b539d5c3461e2e59da1dc1062af1",
+    "size": 605
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/offline_mission_replay.py",
+    "mode": 420,
+    "sha256": "88d75e5f926d1ae0a051603d32c355a70ccaae210727e0210f4072356337f9ad",
+    "size": 25110
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/replay_ego_px4_obstacles.py",
+    "mode": 420,
+    "sha256": "57fa8de849b0882e019da9fdf631acac9375a1a99b521e83ab77f132bc9568a6",
+    "size": 20309
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/replay_observer.py",
+    "mode": 420,
+    "sha256": "d94625d285769be507decfc3ce40516e859c9b80b16f5250300bd46b8207b7c1",
+    "size": 4810
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_alignment_comparison.py",
+    "mode": 420,
+    "sha256": "901cb478de8b3dde7e7b00128c3c361fc9551befe254e1337f1f37862703859f",
+    "size": 13604
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_alignment_trace.py",
+    "mode": 420,
+    "sha256": "05d81ce7ac0bb4887fff6f8912f1b5a5cedd1f135802aa786f7865f13c8670a1",
+    "size": 11129
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_continuous_search.py",
+    "mode": 420,
+    "sha256": "f4aa765e8a15f61eb5dbf5251dc1a4f50bbeb7f8e7ceea7bdc57642f0a87a57e",
+    "size": 11576
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_copy_center_then_offset.py",
+    "mode": 420,
+    "sha256": "63aefdc3daa74e39b4c975e2cb7d44f95b184f26ce6278fdb82df3c68bb44529",
+    "size": 8285
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_copy_full_entry.py",
+    "mode": 420,
+    "sha256": "a28e37e89e005e5be142db6e7553ec2448a8428417b5542367e68c2749498349",
+    "size": 9696
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_copy_gate.py",
+    "mode": 420,
+    "sha256": "d06ee92a2db24a78d27d38bd8e97ab740f8b74941961798c3b63b11e6599ba07",
+    "size": 12244
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_copy_height_release.py",
+    "mode": 420,
+    "sha256": "c7a051a4d7457a9a3f8136b3977f1e37055265d29ed99cb9b62d27d26697a24a",
+    "size": 11376
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_copy_waypoints.py",
+    "mode": 420,
+    "sha256": "fea5bdb73996c12d46bde0042fbd6e3ee71d151736a63938879191335bba3a4d",
+    "size": 50051
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_copy_y_tolerance.py",
+    "mode": 420,
+    "sha256": "7d40545d1b9c9786f7688f67415305f0dc19a44251768c2bec79a605773a2153",
+    "size": 9492
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_delivery_entry.py",
+    "mode": 493,
+    "sha256": "72cd8fad215269314876123a12591698d342b00a4d9d500c841b80c352bd4694",
+    "size": 3699
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_delivery_fallback.py",
+    "mode": 420,
+    "sha256": "c398f274758b18861639ae67d7323b7fb38389ffc2c90abe12ef7d069452b6cc",
+    "size": 11489
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_delivery_policy.py",
+    "mode": 420,
+    "sha256": "4b103bfab2c636ea032b01d2a0ead18dfbfe735996c693cc912a195bac6cbc80",
+    "size": 17390
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_delivery_position_mode.py",
+    "mode": 420,
+    "sha256": "65df21f061e05b98a5adadfb3d454730b3fd2baead91d5e2c2a743b46a2da891",
+    "size": 6336
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_delivery_timeout.py",
+    "mode": 420,
+    "sha256": "2f0f70659e02e00b5516ed5ff0642d90959271f2ee4361e75bb665f5264e6ef9",
+    "size": 7943
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_delivery_tuning.py",
+    "mode": 420,
+    "sha256": "658d5c3337cdd06ee2ee030bfcd1478f11fe3ca96c1c4d86542761ffa32d430d",
+    "size": 13470
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_depth_planning.py",
+    "mode": 420,
+    "sha256": "8ab15894a6a5e3871f85b48bb488c608fb354f9646e993f3096b80cd083e7d0d",
+    "size": 13328
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_door_detection.py",
+    "mode": 420,
+    "sha256": "95da7f04c7ba5e7a7680cfe3994a34619ba3f2b3435352f9394008fe239c9371",
+    "size": 8153
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_down_alignment.py",
+    "mode": 420,
+    "sha256": "19ef958c19c8b3874cc4ec2248396ebdbe4cfa0dfffb7dd0dafcc391674a885a",
+    "size": 4302
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_down_association.py",
+    "mode": 420,
+    "sha256": "7aceb0dd51d5fa1b19219a9e834efd68551b44972b9ade3d9a92ee8c1041b9e2",
+    "size": 7299
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_down_first_yolo_takeover.py",
+    "mode": 420,
+    "sha256": "9a18089559f39756e484d1edff26e650fa0956c562f39eb4b80b6ee989d77381",
+    "size": 5929
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_down_kcf_preview.py",
+    "mode": 420,
+    "sha256": "f8b9b09fe0ad6ca53bf7a16e1b41fbe13119621b1adb7ddfe10d4e9168d76e97",
+    "size": 12421
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_down_model_switch.py",
+    "mode": 420,
+    "sha256": "37277146499fb1da38d91c7287f3e1dfb715f4bfac71ad3143f39486dd654875",
+    "size": 5991
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_down_takeover_regression.py",
+    "mode": 420,
+    "sha256": "4ee4525822393d699063fce8dcfc948cf535c619cb0675ae3a78df0f334440e2",
+    "size": 4178
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_ego_land_entry.py",
+    "mode": 420,
+    "sha256": "531ad1acbfc47569e344ade1fab15600225b9e5fef08e81c4d95dcabab0c3299",
+    "size": 29660
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_ego_obstacle_replay_assessment.py",
+    "mode": 420,
+    "sha256": "f8d99a81e12c9cf57950fb791ed0462b1606a4c66cbb136d448812fd3901c551",
+    "size": 2849
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_ego_px4_entry.py",
+    "mode": 420,
+    "sha256": "c8370753f2f775c8e8d91f1a1b35598c7128a2a0714bc3923a5b1ee5f2a602e2",
+    "size": 5369
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_ego_three_points.py",
+    "mode": 420,
+    "sha256": "0d23a6a59daa701db989c81c85bc31fcc188c38c0c70c36ba9816c9c51a56101",
+    "size": 14454
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_engine.py",
+    "mode": 420,
+    "sha256": "06f51652cf2f6f2a37f4324a4bc591fe31d97f37a2ecaa81822d54f8e949388c",
+    "size": 39217
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_field_test_entry.py",
+    "mode": 420,
+    "sha256": "90f29509cda95c6e360228a4877b7ccfc52f500765e847bb3919947b3437bdac",
+    "size": 30170
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_final_double_scan.py",
+    "mode": 420,
+    "sha256": "07b4b09bb83192a70621176cc4e750578886515e310f71b57798f714b03b57ad",
+    "size": 17644
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_final_mission_entry.py",
+    "mode": 420,
+    "sha256": "3569a997d0d11c4eb137e3e85533475716bf7c6cac0c3ad37a168648b621c0cb",
+    "size": 9352
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_final_route_deadline.py",
+    "mode": 420,
+    "sha256": "204ba775b726901fb663d072740744eee5db35eeced18df4f38698781c856df6",
+    "size": 13701
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_final_search_resume.py",
+    "mode": 420,
+    "sha256": "e81484c9cde959dd399ba1f216444f7833c3dee848bc41aaf8734d9b774be2e4",
+    "size": 11775
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_flight_configuration.py",
+    "mode": 420,
+    "sha256": "ee0a27cf50b190381a9d0439375d85a825e36ad9d34242009be8b42ccc00f648",
+    "size": 29015
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_flight_recording.py",
+    "mode": 420,
+    "sha256": "2fa2bff838d0a946e56f231633a93fd38f592fe9b59633973da625a24b038797",
+    "size": 23141
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_front_confirmation_variants.py",
+    "mode": 420,
+    "sha256": "3d7c5521f44122b97da47282d51be33d4320fed86194156f5668b790f515e911",
+    "size": 6843
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_gate_arrival_configuration.py",
+    "mode": 420,
+    "sha256": "7a85c7008c2eed66057a21f3e98749cd345ea41523c398c73a46a6619af95bf6",
+    "size": 8447
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_gate_navigation_recovery.py",
+    "mode": 420,
+    "sha256": "9668c6451de2795e91e297ff1ed12786af971c861afef572930d2770e942e83e",
+    "size": 10709
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_gate_once.py",
+    "mode": 420,
+    "sha256": "e3fabb98dd0cc02f44c0fce52cabe763f3f7ec793c0bb296de57f786b6a8dad6",
+    "size": 9726
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_gate_planning_memory.py",
+    "mode": 420,
+    "sha256": "a48bf41f202c48ffc170317b4af434799abf7883f60b6a638f5b91c6bed3a065",
+    "size": 7358
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_gate_trajectory_arrival.py",
+    "mode": 420,
+    "sha256": "1798dd68780686235c95f6d5f931e4b0fcdf44662a76bccf3e05269828a147d2",
+    "size": 7157
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_h_landing.py",
+    "mode": 420,
+    "sha256": "1590ba7a0bf586e4780d74c6c044d95579b58ca32ae273e7c7cb78ddad1ccc0d",
+    "size": 10864
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_h_landing_first_height.py",
+    "mode": 420,
+    "sha256": "907447aa442d204bc98640d4873bdfb96cfaf26e16f0c0340d7e68d74886d8fc",
+    "size": 13144
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_h_landing_wiring.py",
+    "mode": 420,
+    "sha256": "bf4118700b504922a868dd01ef832314bebe4f6e160f7b0186e5c5f49f44d5e7",
+    "size": 6229
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_h_offboard_position.py",
+    "mode": 420,
+    "sha256": "7b1347bf2b20f4eb834ca98e010b590bbfa57821ae158348b5e35b2b9334d974",
+    "size": 11568
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_h_post_align_offset.py",
+    "mode": 420,
+    "sha256": "1a109adad7c52a6e4647f73d563feefd20d474a107a9c24bdb66716d909f3e73",
+    "size": 14858
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_hover_drop.py",
+    "mode": 420,
+    "sha256": "a93da85758dbe2bffd81c2357569d4e0df99fecac224defeeefdf5acf077555c",
+    "size": 25999
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_hover_pid.py",
+    "mode": 420,
+    "sha256": "ce23512265e056bdaff8000b014883295f3dded764d4e28c89748e54c5e1e5a5",
+    "size": 6144
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_hover_recording.py",
+    "mode": 420,
+    "sha256": "8e74e95757b5abf1aaeab316cdee6561867d994b1295a08529434879bd73be68",
+    "size": 10499
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_hybrid.py",
+    "mode": 420,
+    "sha256": "21bd9a6dff05570f1080e87dcfe14a21aeb0a3b131bb506ada97e7ae91466308",
+    "size": 14792
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_hybrid_full_entry.py",
+    "mode": 420,
+    "sha256": "67d80daac38af716d0e7e69c42ebfe8006987238561dba259fcd69dae0cc8c1d",
+    "size": 11529
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_hybrid_wiring.py",
+    "mode": 420,
+    "sha256": "b87ceb86ae65830b94980eb1738b602e30164e8da8ad4c7b9e17c2d268a88a16",
+    "size": 4953
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_keyboard_calibration.py",
+    "mode": 420,
+    "sha256": "d945bd05daacdd150e7b341ba8847852488a0fbdcf43262ff05a4865f486ff74",
+    "size": 2987
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_keyboard_control.py",
+    "mode": 420,
+    "sha256": "5c1f6d32858f7fc6f825ba67e4daa5672ffa636d20978e394632bbda2a13d5f6",
+    "size": 19674
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_localization_tuning.py",
+    "mode": 420,
+    "sha256": "c38b62d8d06fe04cd2987590a8b3462d6716d4e6a06388eebcfe23c99bddad58",
+    "size": 11177
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_manager.py",
+    "mode": 420,
+    "sha256": "9a5ccc5b1ef888caf785046839e98634133e59867727ccb540feea88e76c7258",
+    "size": 76898
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_manual_height.py",
+    "mode": 420,
+    "sha256": "b2d7ffc57d1834c760fc4dcd6dc358e2496140d2f7c1d799eee67d3c5c367df4",
+    "size": 19251
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_map_tuning.py",
+    "mode": 420,
+    "sha256": "77b589d1263ba4343c0a6156fb209d5753fd439fe84d7fad5249b98d66c65244",
+    "size": 16795
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_migrate_flight_tuning.py",
+    "mode": 420,
+    "sha256": "97286c6188a97c4b65cd1a8ae7c8c19ca1e34c3f990388dd34e3d4f380ec4526",
+    "size": 21855
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_mission_heights.py",
+    "mode": 420,
+    "sha256": "af58e5c5ce04536a3f11a9016cae6143df5059383d5d9aa3e16758881830010a",
+    "size": 3791
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_monitor.py",
+    "mode": 420,
+    "sha256": "a2178465772d3c81e1d4d635c0ece6d12100cebb55fef9add0263462b9409b45",
+    "size": 31640
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_motion_tuning.py",
+    "mode": 420,
+    "sha256": "07f889b9dd4d502020a6e3bf682ad28f8b40a2dd87f052d6979b88e33afd3ce2",
+    "size": 5725
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_control.py",
+    "mode": 420,
+    "sha256": "3f41771b235cdc882e0f6644e504defc645b61f2c660445fbf1c151554a1d9c5",
+    "size": 21073
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_controller_entry.py",
+    "mode": 420,
+    "sha256": "22c01d9a60c640db6bd733605aa7c869852222299e25bc02b6b164bca7fab13f",
+    "size": 3356
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_direct.py",
+    "mode": 420,
+    "sha256": "060b0d43489ead16c9faeb5a29a5129d8eaa325936e306d6bc417990fdcc9da2",
+    "size": 6556
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_door.py",
+    "mode": 420,
+    "sha256": "18c21fb21a51bfb1ec19acab7379cf88a0b8b08f19a7d0d94498a2f86080c9d6",
+    "size": 16174
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_door_network.py",
+    "mode": 420,
+    "sha256": "dfe17114b09950bd39ec9944c47870561aead5fd64c3f85731cdc029bd5455c3",
+    "size": 25162
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_ekf_snapshot.py",
+    "mode": 420,
+    "sha256": "b9b5e39930af446cb728e179e29330d7e76aa521c0be07aff3b5e897605819fd",
+    "size": 17020
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_full_flight.py",
+    "mode": 420,
+    "sha256": "9ae40e53457ea1cc10c72b76e20b1fbb824c7154b5e2790697ac24c3cf2e8fa7",
+    "size": 19546
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_full_manager.py",
+    "mode": 420,
+    "sha256": "d1d9198370a3f50ba8589b07f192eb99f2a41f74762c9d4562ee6c171fe3a10a",
+    "size": 35803
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_gate.py",
+    "mode": 420,
+    "sha256": "a881d27946192a3a6cda825c5f9e608ef614c94980e83b6d875ee0a8f3761ff9",
+    "size": 6492
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_h_landing.py",
+    "mode": 420,
+    "sha256": "077a584ecf2c8c612f4ef124f1ff7451e5adbad2262ad9e998b75d36a2048b6d",
+    "size": 24168
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_lio_profile.py",
+    "mode": 420,
+    "sha256": "0acd8e95b3357ed3d7f334adb6085e7a9b27de941506abc03ff0f1b48484f570",
+    "size": 10395
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_manager.py",
+    "mode": 420,
+    "sha256": "b5e2570cdcbc1e638b6bfe158a306bcdc494a2e466b7fccf684fa4d1d02449f1",
+    "size": 9890
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_parameters.py",
+    "mode": 420,
+    "sha256": "bc5c4ad493dbdff02f296b992b345e2648452f631080a0ea284e3ff24c1acf7a",
+    "size": 7492
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_task_feedback.py",
+    "mode": 420,
+    "sha256": "e0f07873c0f24b7dea8718dad274bff2752c51fd6211f2e478fff54b6e48878a",
+    "size": 23652
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_two_point_gate.py",
+    "mode": 420,
+    "sha256": "fe6e1b5d41122adbadc65fc811bdc8e85c4c3d227dc03b98013bd1f8b81a294b",
+    "size": 13311
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_native_two_point_manager.py",
+    "mode": 420,
+    "sha256": "9e2e8e9559be906bf1accf5090ea918c4c0c6f1e02826204612e31ccefca68a0",
+    "size": 17584
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_navigation_goal.py",
+    "mode": 420,
+    "sha256": "4671471e39c3cd8815e51dcda28ca97c9884402768eb5156129ae526fe46039f",
+    "size": 12073
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_navigation_heading.py",
+    "mode": 420,
+    "sha256": "48911ea06da77ca4505520fbd8e133adc9ceb2105773a6dd5c9dc98e9c3ee897",
+    "size": 9046
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_near_target.py",
+    "mode": 420,
+    "sha256": "5d6bd8aed1263a7307d2ea0d1329f5d8e39a9f3bfa2b92f2ff73879d7d8c27a3",
+    "size": 4922
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_corridor.py",
+    "mode": 420,
+    "sha256": "a48ca582a3c11481c7faa929c4af93576559ec10a68ef74f5ed0531453fdba96",
+    "size": 26137
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_depth_policy.py",
+    "mode": 420,
+    "sha256": "719d24f9fb92e06a34f85ecb4b83d22c2d3abb0616798053293c629ef2f1c993",
+    "size": 9801
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_depth_recording.py",
+    "mode": 420,
+    "sha256": "54d26d370994adbc852e6800788c4848a8d985df6614af38ba8313d427b075c6",
+    "size": 4219
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_depth_rectification.py",
+    "mode": 420,
+    "sha256": "a815a2c5290d5ce23e131fcb8adbb001453663f12ca247329fb6f732d14ab746",
+    "size": 8544
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_depth_runtime.py",
+    "mode": 420,
+    "sha256": "e2dabcd09281fe91d55eb098c7668886972b9a45d13c7dbb134ac15a2649789f",
+    "size": 23070
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_door_entry.py",
+    "mode": 420,
+    "sha256": "053429b828dc9c7fcdde4c5fb02cfafa719d27468980a33f2b987de330960cfe",
+    "size": 19292
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_door_search.py",
+    "mode": 420,
+    "sha256": "4f29c349624ca4da2f7292e53d0bb2288ae51fa480d043e73b941a8df1d8d844",
+    "size": 14600
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_neural_policy_worker.py",
+    "mode": 420,
+    "sha256": "28e19fa1eb9850509152ce117160d49b8f8a9ffeb904d20f26dd107d68678f37",
+    "size": 3154
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_outlet_geometry.py",
+    "mode": 420,
+    "sha256": "0d624da59ff8b8c45358a8bba78d214746c5a9d5cb19117d20397e6d7c800ccf",
+    "size": 8135
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_panel.js",
+    "mode": 420,
+    "sha256": "a97ec9533244f86564d1068d0ce8f8d8ea73680ffcc5eed88a12da68744aa5af",
+    "size": 14807
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_payload_aim_calibration.py",
+    "mode": 420,
+    "sha256": "cbeb5d9d9e9f5bb9cc34a87d2ab2232cd7a19ecf72b64efb280e3e248765b27f",
+    "size": 11038
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_post_descent_alignment.py",
+    "mode": 420,
+    "sha256": "f0668a6d9299e5735ce952685bc066307c2651f967167c4c7efccacef40e258d",
+    "size": 14356
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_released_classes.py",
+    "mode": 420,
+    "sha256": "f3ec6ac389cd4625c5af42bf8118dbd76b30d9c4b63d547348d6ca3b58e7bc6c",
+    "size": 10607
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_resources.py",
+    "mode": 420,
+    "sha256": "0af205e2f1caf6ea563494510f57e57a16c445582e69199a8f24cb23a7bd9727",
+    "size": 9551
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_retired_hybrid_entry.py",
+    "mode": 420,
+    "sha256": "e41cde4b89e2e48f9518c560c20d793ef6313df0d5a12bd030726c70b33ea228",
+    "size": 1510
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_ros_reconnect.py",
+    "mode": 420,
+    "sha256": "980aa88608ecc25ff76cbf3ece729e3b20fdc65241fb1c13eb6d25b76ed3411d",
+    "size": 13726
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_rpc.py",
+    "mode": 420,
+    "sha256": "4076214909fba866c742ac773fadefee96bf1880be21e4a21f4f270132ab36cf",
+    "size": 2576
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_rviz_goal_bridge.py",
+    "mode": 420,
+    "sha256": "9608cedd6d6f405874daaff2f78f4a81d623e8be2134e6036688a4bbcac1133e",
+    "size": 16034
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_search_filter.py",
+    "mode": 420,
+    "sha256": "84beb59e32060ce34366c3502716869b8204b94396873f3443769f28664abc5e",
+    "size": 5665
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_sector_search.py",
+    "mode": 420,
+    "sha256": "d94c1666905c033e16672e22af83542a6e642942baa7fa3547bbcd4a18e67c51",
+    "size": 14227
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_stereo_door_runtime.py",
+    "mode": 420,
+    "sha256": "849ce8d7cf44b8a1b5601c78c11043897bd3cb18965782d6816545c0edf1a568",
+    "size": 9068
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_three_drop_gate_land_h.py",
+    "mode": 420,
+    "sha256": "ea03f6c6229d6f0824028922786d4dee4c018e8385d3638c451d8f017f686eff",
+    "size": 19204
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_three_drop_h_land.py",
+    "mode": 420,
+    "sha256": "f4bfa85e01f3ee183086b04ee8f02b7eea2b7cb67661aa2ec239b10a09c13eca",
+    "size": 19194
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_three_drop_red_cross.py",
+    "mode": 420,
+    "sha256": "0dff796ae5647d6b4afc30081bdb7780eefb320cbc8fef4e5c216e6dd37d3c3a",
+    "size": 7830
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_tracking_test_entry.py",
+    "mode": 420,
+    "sha256": "557a8fc97e059606b1242d2693085ca6f31527e5a6e03ae969e258004ef792c1",
+    "size": 9627
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_tunnel_leg.py",
+    "mode": 420,
+    "sha256": "bab57bb6b394db15408a8277552ef4488731d2020df437f4cfca18ff7217d255",
+    "size": 22870
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_turn_search.py",
+    "mode": 420,
+    "sha256": "3ec30288a045f18919d7e5006fb8c94c187fd8d037e961bbfd54e1c5620ca745",
+    "size": 9200
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_vertical_speeds.py",
+    "mode": 420,
+    "sha256": "b4a9c511dad73933499ed9b94fab200c693084600f17fb9d639d551a81939766",
+    "size": 7039
+  },
+  {
+    "path": "src/airseafly_real400_mission/test/test_vision.py",
+    "mode": 420,
+    "sha256": "aaa738bbdf61039bef13170927a914c55e2dcaf60de1287953d8597d85b2c1cb",
+    "size": 13122
+  },
+  {
+    "path": "src/airseafly_real400_mission/web/app.js",
+    "mode": 420,
+    "sha256": "2b3a0dc21bc3625f40c58e490647ff558550e5be29c84b6adb186c6d61edba57",
+    "size": 31605
+  },
+  {
+    "path": "src/airseafly_real400_mission/web/copy_gate_trial.html",
+    "mode": 420,
+    "sha256": "7effb656986f43503efcfe289b857bf61da3832551f1ce0f373efb9d239ae84f",
+    "size": 25631
+  },
+  {
+    "path": "src/airseafly_real400_mission/web/index.html",
+    "mode": 420,
+    "sha256": "1fc70721d4e9fa90c2814ef9fa4ff581016d6ed15479795e391f6740283a5ab7",
+    "size": 5637
+  },
+  {
+    "path": "src/airseafly_real400_mission/web/payload_aim_calibration.html",
+    "mode": 420,
+    "sha256": "f06e77256bc0eed24f27d7990d6202c8799ccc36060a4b195d0147a120cd6983",
+    "size": 19582
+  },
+  {
+    "path": "src/airseafly_real400_mission/web/style.css",
+    "mode": 420,
+    "sha256": "becb722ff9d1a4f39026946d3aeb89b62043a784e290ff8034abeb0941b72caf",
+    "size": 8113
+  },
+  {
+    "path": "src/planner/plan_manage/launch/advanced_param.xml",
+    "mode": 420,
+    "sha256": "d82e106de0b4520c13d5b174f4dc455b3ddba983d05a1299db05a15e3396e9df",
+    "size": 7558
+  },
+  {
+    "path": "src/planner/plan_manage/launch/run_in_sim.launch",
+    "mode": 420,
+    "sha256": "6d54457abdbb4b8183a1f97c1e71778b6f2df755db26a52a6072850432d50229",
+    "size": 5124
+  },
+  {
+    "path": "src/planner/plan_manage/launch/simulator.xml",
+    "mode": 420,
+    "sha256": "dc2cbf8ee5813d44252dac48f447c843894ffba86855a683e65e323995861660",
+    "size": 6954
+  },
+  {
+    "path": "src/planner/plan_manage/launch/single_run_in_sim.launch",
+    "mode": 420,
+    "sha256": "7500159b4015fbe3abb00fd0dfd41131a52b4ecb8d1d7cd92c59bf3c64a988c3",
+    "size": 5016
+  },
+  {
+    "path": "src/planner/plan_manage/test/test_ego_nearby_integration.py",
+    "mode": 420,
+    "sha256": "6f684e23f76f322c606c0d180ad96cbdfc27696dbde8f27e88ade64f77e83135",
+    "size": 7378
+  },
+  {
+    "path": "src/planner/plan_manage/test/test_rviz_map_preview_integration.py",
+    "mode": 420,
+    "sha256": "9eefa1b95ebf89ae845388464a8a6112306db4852b58ef1445717b2db106b2fb",
+    "size": 8258
+  },
+  {
+    "path": "src/planner/plan_manage/test/test_search_map_integration.py",
+    "mode": 420,
+    "sha256": "de8be64f01ec8ed9785685da5944ac00206ce3a96f8b5291a2647a11568e753a",
+    "size": 5296
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/LICENSE",
+    "mode": 420,
+    "sha256": "62b93d42d023c810dec6ce15857bcdc9e0d523ac838444f598c749f2db6ea7ab",
+    "size": 11348
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/README.md",
+    "mode": 420,
+    "sha256": "ba0ecca13a75c99c528469b7ce03abcf3faf892f2b5291490e469916f802948f",
+    "size": 21256
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/.gitignore",
+    "mode": 420,
+    "sha256": "7632758f889948ae1fdf5a1f47102ff2fa4784cfce2ee54709b06532ba1faa57",
+    "size": 20
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/CHANGELOG.rst",
+    "mode": 420,
+    "sha256": "f204f390e505ef76550c28472a51675f5491cb8e893b0926eb656b890d56e9a5",
+    "size": 4699
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/CMakeLists.txt",
+    "mode": 420,
+    "sha256": "49a9a1aafc1a80850c8a0fe6e9d01700aa9699ea02ca00daa3040902cb4fa5f1",
+    "size": 3879
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/debian/udev.em",
+    "mode": 420,
+    "sha256": "d573f5b264f62fb6e2e2407048a613c0351aa5a525c3a14946b116da9347d45e",
+    "size": 9311
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/include/base_realsense_node.h",
+    "mode": 420,
+    "sha256": "aadc5a4b8dec2a7aaade9b01e8381fdcc1a8c0e941c2ef28042831d888937d5c",
+    "size": 14708
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/include/constants.h",
+    "mode": 420,
+    "sha256": "0dbaef8f38fa690e7ac5a631223092ad60a0529ab6ef7da2c498aa87c9a4774a",
+    "size": 4707
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/include/realsense_node_factory.h",
+    "mode": 420,
+    "sha256": "94a5dcbc9b0512568678decadf2e3734ddee5f04d27c1db10f0b2cecfa42878a",
+    "size": 3389
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/include/t265_realsense_node.h",
+    "mode": 420,
+    "sha256": "5dd4dffaa04de95f27dcc3def996152a13b33e4b6c79acfcb63347c8feb34ba9",
+    "size": 1165
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/demo_pointcloud.launch",
+    "mode": 420,
+    "sha256": "49dba94c23b4fe4902c2c54cdd4f5df58099410bbb1c1655ebc3ec6c52f95171",
+    "size": 1385
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/demo_t265.launch",
+    "mode": 420,
+    "sha256": "096729804620c4ca5a0c55a1049404a3984832afa3c1135f12617860a2ca9a30",
+    "size": 200
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/includes/nodelet.launch.xml",
+    "mode": 420,
+    "sha256": "e426d17b98cff3e21ad32c23f7027e2840e490524e7c40059515a4c77111fae4",
+    "size": 14436
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/opensource_tracking.launch",
+    "mode": 420,
+    "sha256": "fa3bb4b3f1927fa276aa0101ed691a6f2a146a47539a5ae29b66f86f16be9d44",
+    "size": 2613
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_aligned_depth.launch",
+    "mode": 420,
+    "sha256": "d288bed14a9a82e8798af552f851c03aceae763fdc60f8db1a88fa28c466317f",
+    "size": 3656
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_camera.launch",
+    "mode": 420,
+    "sha256": "27fbdc338e3910183c77eda03c394129dcc7cb2be74b7a51c1a06e9098edbef9",
+    "size": 7782
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_d400_and_t265.launch",
+    "mode": 420,
+    "sha256": "21335e831559e4d1f61f507fb2b858b9e68d979c41661f1baeb196012c8acf17",
+    "size": 3097
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_d435_camera_with_model.launch",
+    "mode": 420,
+    "sha256": "22a48f37b545e02f1a75401306c16a1b5255dd5a2657663f001b52247705750a",
+    "size": 5875
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_from_file.launch",
+    "mode": 420,
+    "sha256": "df577d1785297125c8cbe061be330db88d64324e6d4a6c5d96b33633850da0fe",
+    "size": 3744
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_multiple_devices.launch",
+    "mode": 420,
+    "sha256": "edf6ebf8e7d2f695d2fa9cec4de84e8b14836f07c8c3eb9a68e2092d888a6a63",
+    "size": 2278
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_rgbd.launch",
+    "mode": 420,
+    "sha256": "dc0a07b0985c0edc5088cd41c83984ca00aace30d0702c374d9bcd569de4db8e",
+    "size": 10144
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_rtabmap.launch",
+    "mode": 420,
+    "sha256": "dfef8c77155b0b70a5b96a04fe425afd0bda8bf92daa92caf5cc54e2bb43b6ad",
+    "size": 2456
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/launch/rs_t265.launch",
+    "mode": 420,
+    "sha256": "707cd79b81a1bc209b6ecad377e99d2448f836df343a3bea0ad58037e987ec6b",
+    "size": 3192
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/librealsense2_bionic.rdmanifest",
+    "mode": 420,
+    "sha256": "f276753fb8222ff134513b75aac563434de3c1279eafec56811c370f13d7e1af",
+    "size": 1441
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/librealsense2_xenial.rdmanifest",
+    "mode": 420,
+    "sha256": "cf5b896329396a91a9dec9d44b2c7811d5b2c7baec8ba71cdd18bade2f417ba5",
+    "size": 1441
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/msg/Extrinsics.msg",
+    "mode": 420,
+    "sha256": "85e08b5dbe973ceafe3e7303bd4f12c4addac8c8231340a676f27e7534b147e9",
+    "size": 66
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/msg/IMUInfo.msg",
+    "mode": 420,
+    "sha256": "e8202171e080a666ea88e751989213a50b490fbc31790c6e5383e91574f44485",
+    "size": 86
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/msg/Metadata.msg",
+    "mode": 420,
+    "sha256": "621ff0e1c07009750ba0e465079e5ef80f3335037602b383226983ff91400469",
+    "size": 39
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/nodelet_plugins.xml",
+    "mode": 420,
+    "sha256": "bd041ae420404a9e1eb6f81b784914a00129377d5f9881bc1a064f3242c29943",
+    "size": 376
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/package.xml",
+    "mode": 420,
+    "sha256": "1b942a4593babff94f1fcbd95f1c26813e4711115f97cad8d4b51204662d38b0",
+    "size": 1265
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/rviz/pointcloud.rviz",
+    "mode": 420,
+    "sha256": "2c5cc816c9926c28cdae1497c112fc589c2c5f80f5bb226a31b0c9cf633f6e2b",
+    "size": 4721
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/rviz/t265.rviz",
+    "mode": 420,
+    "sha256": "2c878a95d93c84e267d8ac45331236463a1f1b0205a8b4d082c95c502e9eda36",
+    "size": 6505
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/scripts/echo_metadada.py",
+    "mode": 420,
+    "sha256": "badb4ef8e4eae618a36a8a091dfa0cafb947b5a26350f1c8b12e91f8e2b47bac",
+    "size": 913
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/scripts/rs2_listener.py",
+    "mode": 420,
+    "sha256": "f1ef6f42f1652178dfe906e8030240b2f2f6f7b5ae8c363fe73c6cbd46a61f34",
+    "size": 12639
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/scripts/rs2_test.py",
+    "mode": 420,
+    "sha256": "e1a2e226043ad64ddef3093871318c0eb6d31845e0c585d835f3e6d156bbf8f7",
+    "size": 18833
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/scripts/set_cams_transforms.py",
+    "mode": 420,
+    "sha256": "9cc3dbaf156c0a8fb5f32418dabbfb5f47afa2adc734a41740911f7c2e654041",
+    "size": 4887
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/scripts/show_center_depth.py",
+    "mode": 420,
+    "sha256": "80f2a3dfcd5c5b3d8eb52d4d531bc56f56097070c26d100ec0821e99f2e312ad",
+    "size": 4091
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/src/base_realsense_node.cpp",
+    "mode": 420,
+    "sha256": "225178acb530d760bf911e565fc1ac494dddd68a7967b5fb8dd0fbd494d7f4f1",
+    "size": 105029
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp",
+    "mode": 420,
+    "sha256": "276c088d7ef16488fc4c35d4db2ae1bee597feeffda1b3bf249d0d41dc135d22",
+    "size": 13049
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp",
+    "mode": 420,
+    "sha256": "a986507bd29fbfff11bd766226b2b39f04e5a585ce2845e4e8f21f14e96335d7",
+    "size": 5636
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_camera/srv/DeviceInfo.srv",
+    "mode": 420,
+    "sha256": "2f94d4fcc7cf34a16e0b4e8c1eb169cfbd7ae5d78a887107c2a9b8e4e5af7562",
+    "size": 136
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/CHANGELOG.rst",
+    "mode": 420,
+    "sha256": "ecd87293c8bbba1e6c94911d9d2ef3b383c1f2044eeb0c415062defc726f1a8e",
+    "size": 2214
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/CMakeLists.txt",
+    "mode": 420,
+    "sha256": "3e8a7a7e2cf59d848c91e2e4c6adcfc9996901850fe19169dc75c301b7dc32df",
+    "size": 347
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_d415_model.launch",
+    "mode": 420,
+    "sha256": "a7144bfe873d9a6d2371993ea6698551f46012089cae62d81f081a6b05615e83",
+    "size": 529
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_d435_model.launch",
+    "mode": 420,
+    "sha256": "9001419956364dd1ee48441a8378877d7bff3e1083ac1d596f32d09ab65b7a32",
+    "size": 529
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_d435i_model.launch",
+    "mode": 420,
+    "sha256": "d5a73a5d19df2ccb0bc22742a10cf1b2db35a9b7889464d102bbf00090bede37",
+    "size": 500
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_d455_model.launch",
+    "mode": 420,
+    "sha256": "e6cbe7d40d03fb75c311ed916c2bc3515332776a0062af58257750c9b3af0867",
+    "size": 499
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_l515_model.launch",
+    "mode": 420,
+    "sha256": "4edbad11840bec8f67cef4e6baaf124aed5d38ecb5746c9a2a8069c4a05808aa",
+    "size": 529
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_multiple_d435_models.launch",
+    "mode": 420,
+    "sha256": "f5f6a22db6fde941f637b7408f4561dc953af123e0455baf2908c51578834e40",
+    "size": 523
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_r410_model.launch",
+    "mode": 420,
+    "sha256": "eccd153245371b0ea132fff56681cc23b49670ef9a76e7136b9d970adf6ade4d",
+    "size": 499
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/launch/view_r430_model.launch",
+    "mode": 420,
+    "sha256": "0ee375df3552f4dfc041eca9d4a65626003a74084713dd595a12e1f4fb10fc1e",
+    "size": 499
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/meshes/d415.stl",
+    "mode": 420,
+    "sha256": "5ffbe0d4b4ffee3133b4b55b1fa68c053e46d186f4a4d2b4c0174a89f423481c",
+    "size": 21258084
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/meshes/d435.dae",
+    "mode": 420,
+    "sha256": "db6a3e27fd4dfe35d10f528c081d6202817c2b70e21bcfab8bac64f576c859f7",
+    "size": 15781708
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/meshes/d455.stl",
+    "mode": 420,
+    "sha256": "47e8321db7cb42291810c69329ab10b601108d651dfcac28bfc12469fa142fa6",
+    "size": 2558184
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/meshes/l515.dae",
+    "mode": 420,
+    "sha256": "ca7963e8472ba1c00ed9253df3a9600d23fd2a73a23fdb1e836fa0260aad811d",
+    "size": 33208371
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/meshes/plug.stl",
+    "mode": 420,
+    "sha256": "91a0bc6ec83fa24b5dcd4de0d1c0ed78032af2e7ed233b4b232bdbf906fea744",
+    "size": 292334
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/meshes/plug_collision.stl",
+    "mode": 420,
+    "sha256": "fc210c929bba2c9cf3f4ec074d4e6a38549904e9a1eddee9661f34ef7c610f5f",
+    "size": 11284
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/package.xml",
+    "mode": 420,
+    "sha256": "2431cc016e5cc63a830f6de36f9f9da9c26cb95dffe31055f3cf4ec8f08eb754",
+    "size": 721
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/rviz/urdf.rviz",
+    "mode": 420,
+    "sha256": "bf18281828f30db999b087e9b97eeb4acc18ffffbef8ae70fd5842720b52a847",
+    "size": 6929
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/tests/dual_d415.xacro",
+    "mode": 420,
+    "sha256": "57aef329dc4a28d2f955ca1f09048c8a2b6721952381f0685cbf1272fd015cfc",
+    "size": 497
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/tests/dual_d435.xacro",
+    "mode": 420,
+    "sha256": "315c4c6866d8888305f7139a8a5dddc50403afcced55e41eca8d76456686c13a",
+    "size": 497
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/tests/dual_r410.xacro",
+    "mode": 420,
+    "sha256": "48aff3986a95c0d1cc26cf2763534d20f6e8ede25e2f81c7dc870d4d78aa5715",
+    "size": 498
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/tests/dual_r430.xacro",
+    "mode": 420,
+    "sha256": "0f0c56df8ef5ef1bdb23bfc206e824ba5901d4c3b4013ff4cf60455b93771aed",
+    "size": 497
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/tests/one_of_each.xacro",
+    "mode": 420,
+    "sha256": "09fdcbfcaa249a8de1e820cdc223d6d0f0e0cd68079106a10455fdd1ff418aa5",
+    "size": 882
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/tests/test_xacro.py",
+    "mode": 420,
+    "sha256": "e0ea7161f194c65a6efad108b5b53517764f8b10ae1f57d116418902e59aa193",
+    "size": 529
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_d415.urdf.xacro",
+    "mode": 420,
+    "sha256": "38fc096ccb9811d6bf6fe67101188748cac2ac57d0fc0af277b2f6dc7f744539",
+    "size": 6457
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_d435.urdf.xacro",
+    "mode": 420,
+    "sha256": "e5a215cbdf6ce5c525e34261b6aefb88b87230e60a295bcabd420713afbb4aed",
+    "size": 7038
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_d435i.urdf.xacro",
+    "mode": 420,
+    "sha256": "ebe933f09c35735dc4be518465c23ee85acef8f0f0ed521248db75bad23321ba",
+    "size": 905
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro",
+    "mode": 420,
+    "sha256": "99a1f258258870cc27720df628c027831a5e6235d32fe6db42481f926d8eda2d",
+    "size": 1629
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_d455.urdf.xacro",
+    "mode": 420,
+    "sha256": "f9b68d9e1b7e162ce893f99dd898408ee77ebe40d18af60aaed0a0b8a0bfe3e7",
+    "size": 8684
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_l515.urdf.xacro",
+    "mode": 420,
+    "sha256": "73a67a7485901c1959c8c56cd927134864a73b73f312fe2982824ed922def780",
+    "size": 9828
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_materials.urdf.xacro",
+    "mode": 420,
+    "sha256": "cc04d89c759b72dc40308cc1acd39308818bd215936f6883693f639860db3bb5",
+    "size": 450
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_r410.urdf.xacro",
+    "mode": 420,
+    "sha256": "feda2fe528587836092bc475b81f812576987fe568da86d4388d0b5a5b6bf723",
+    "size": 4918
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_r430.urdf.xacro",
+    "mode": 420,
+    "sha256": "44573d42a54e6582c4b401d9f6feb68ed79df5c47472dfe4a787f08ba7a6f5b1",
+    "size": 5574
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/_usb_plug.urdf.xacro",
+    "mode": 420,
+    "sha256": "0aa9f2a1003c28423a8d22e1ebd056ed6d30b77d981aaf86dc7e5c5c013994c5",
+    "size": 1309
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_d415_camera.urdf.xacro",
+    "mode": 420,
+    "sha256": "8b245348a9893cd7b732fade40458029c5506185716eb6a4f289deb81752d93e",
+    "size": 585
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_d435_camera.urdf.xacro",
+    "mode": 420,
+    "sha256": "0964a39565f72a12645072503673f27545ab537680248e9f2958233c6df7ea8f",
+    "size": 586
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro",
+    "mode": 420,
+    "sha256": "b0a930b1da6841ebde9112265e99ccc88f843ae5b9b1c949ce5d1aac2a48ce57",
+    "size": 633
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_d435i_camera.urdf.xacro",
+    "mode": 420,
+    "sha256": "75fba55a572de8e8294566d07753c45237da21a77c0aad5737622e3b02941aab",
+    "size": 444
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_d455_camera.urdf.xacro",
+    "mode": 420,
+    "sha256": "30ea95596301b2bc04ac543fdae5c0b361638a6f9028ef39304612b3ca2b3333",
+    "size": 437
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_l515_camera.urdf.xacro",
+    "mode": 420,
+    "sha256": "e30e12837200dc1122e771bd6b3b0cb19de0e6a55f500f8296ff04ecf775ae8d",
+    "size": 586
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_r410_camera.urdf.xacro",
+    "mode": 420,
+    "sha256": "af36e887cfaee105a1ada097f5e0581a174384cf99ba2c6ed24b69dfbb7548f7",
+    "size": 437
+  },
+  {
+    "path": "src/realflight_modules/realsense-ros/realsense2_description/urdf/test_r430_camera.urdf.xacro",
+    "mode": 420,
+    "sha256": "b1ba8cfe0f09bb7f2845e998e143ac561513dcdc5049b097e3935b77cecf4080",
+    "size": 437
+  },
+  {
+    "path": "tools/calibration/camera_px4/audit_bag.py",
+    "mode": 420,
+    "sha256": "2c711087522a5bb95ae64a66eb10959a6cd5501c79b0658e83649ea1b7b4d238",
+    "size": 12280
+  },
+  {
+    "path": "tools/calibration/camera_px4/capture_math.py",
+    "mode": 420,
+    "sha256": "83d3044a6216f3bd3877e03692975f99457fa8f22106ede54cd297e91451d66c",
+    "size": 2988
+  },
+  {
+    "path": "tools/calibration/camera_px4/check_carton_top_edge.py",
+    "mode": 420,
+    "sha256": "cb347922d36e9b42ceae26276020f1893abb71c0138407e288239e17f083a1d7",
+    "size": 6999
+  },
+  {
+    "path": "tools/calibration/camera_px4/compose_candidate.py",
+    "mode": 420,
+    "sha256": "32f7f269c44a9697f73e5e27106fcfdec7021f5d172deb263b36176de61c757d",
+    "size": 4369
+  },
+  {
+    "path": "tools/calibration/camera_px4/env.sh",
+    "mode": 420,
+    "sha256": "78267909de335a7087ba32be8c318a52376126258284caaaadc229dd95ad3c60",
+    "size": 371
+  },
+  {
+    "path": "tools/calibration/camera_px4/inspect_lidar_camera_bag.py",
+    "mode": 420,
+    "sha256": "a76de50287dda5430a709bef2860ae398c223ea9cc74f85574b0f47dbef0a604",
+    "size": 11261
+  },
+  {
+    "path": "tools/calibration/camera_px4/record.py",
+    "mode": 420,
+    "sha256": "76be19ed6d1c02256c10979574901d55995a65392b7379009eae1a9db08a15c2",
+    "size": 7301
+  },
+  {
+    "path": "tools/calibration/camera_px4/record.sh",
+    "mode": 420,
+    "sha256": "1073d99aea86dae553573015ab264e342debc5f6172516961a731c6ac09f90a6",
+    "size": 187
+  },
+  {
+    "path": "tools/calibration/camera_px4/sensors.launch",
+    "mode": 420,
+    "sha256": "0381bcb7a38dd4a3bee17187b75af7f558ae24077a986b620c29ee5150a94570",
+    "size": 2018
+  },
+  {
+    "path": "tools/calibration/camera_px4/solve_candidate.py",
+    "mode": 420,
+    "sha256": "7451a7426da818d184ab70797c2e424edc22b6b7c4292284b7da6442b4425525",
+    "size": 5434
+  },
+  {
+    "path": "tools/calibration/camera_px4/start_sensors.sh",
+    "mode": 420,
+    "sha256": "3e5a57869ef198b22b9085f121ee1461b65c3a92cd121a7150512af7ae7927b9",
+    "size": 1261
+  },
+  {
+    "path": "tools/calibration/camera_px4/target.yaml",
+    "mode": 420,
+    "sha256": "c4942251ab353f32e2cd2d5b98b42cef57a26e2e854f3d41ce6c53d01ee2f27b",
+    "size": 291
+  },
+  {
+    "path": "tools/calibration/camera_px4/test_capture.py",
+    "mode": 420,
+    "sha256": "391dfbbe1a361f2c7886b2be7641b16506702c38691c2b19bd6d6755cfac01e1",
+    "size": 3211
+  },
+  {
+    "path": "tools/calibration/camera_px4/test_ros_capture.py",
+    "mode": 420,
+    "sha256": "d6330e65a342d86c1370fcbb0ae3b3aeee1706403c43a11da58c5a976cec846b",
+    "size": 5944
+  },
+  {
+    "path": "tools/camera/record_dual_30fps.py",
+    "mode": 420,
+    "sha256": "4a4a10351e0098a961a718b31cc3e1f21be07ce40b97581eabd87e208518f0a5",
+    "size": 34738
+  },
+  {
+    "path": "tools/camera/test_record_dual_30fps.py",
+    "mode": 420,
+    "sha256": "19866d04b7b3d0e8a786fa56a4ac238045180d4c142e67e6c8af83f7d296eab5",
+    "size": 15630
+  },
+  {
+    "path": "tools/door/ALTAIR_FLIGHT_README.md",
+    "mode": 420,
+    "sha256": "9aafb0d402c99432b57f8ccc84c71dc4e664a4d91530f3c2d925dfd96b1641df",
+    "size": 8551
+  },
+  {
+    "path": "tools/door/ALTAIR_README.md",
+    "mode": 420,
+    "sha256": "56806b39fcaaac366e3463e51374440f6da1dd8948c70deb7110ff34bd2b1676",
+    "size": 8144
+  },
+  {
+    "path": "tools/door/ALTAIR_UPSTREAM_LICENSE.txt",
+    "mode": 420,
+    "sha256": "d96334a0e257629de891346bf4991ec42ff95965404e77a327882f6e69ac2620",
+    "size": 1329
+  },
+  {
+    "path": "tools/door/POINTCLOUD_PREVIEW.md",
+    "mode": 420,
+    "sha256": "66925f54a7de0a3c27e0e93dca3579a420c1dfaacebdefb17abbc5aa73270480",
+    "size": 2534
+  },
+  {
+    "path": "tools/door/altair_check.py",
+    "mode": 420,
+    "sha256": "a74721c88952ba2fc7ae23296ab986635c7d6a6d79b3dd7efb25d48937de2ff5",
+    "size": 19090
+  },
+  {
+    "path": "tools/door/altair_core.py",
+    "mode": 420,
+    "sha256": "5331e0322f8e9d4a66107a22d404219bd03be6b5036153e23af6c743c547d26a",
+    "size": 13607
+  },
+  {
+    "path": "tools/door/altair_crossing.py",
+    "mode": 420,
+    "sha256": "ae1f9a802c6ec02a4bacd4d35797fbcffc92ba6d549d60ffcb66b07579ba3736",
+    "size": 17238
+  },
+  {
+    "path": "tools/door/altair_crossing.yaml",
+    "mode": 420,
+    "sha256": "a52b43bd38468413a1c40d1792f44b533647499f56e4adf10d6f92f4c2909a33",
+    "size": 1152
+  },
+  {
+    "path": "tools/door/altair_crossing_sim.py",
+    "mode": 420,
+    "sha256": "cc3a656d611f4b70be156364a8949e631d803626768a3b3402855224fbd1fdee",
+    "size": 7618
+  },
+  {
+    "path": "tools/door/altair_flight.py",
+    "mode": 420,
+    "sha256": "532ec162cd742c5aca339331a1c6b3ef08f613f6b13c6c46a3b5b3a033fb5798",
+    "size": 15997
+  },
+  {
+    "path": "tools/door/altair_preview.rviz",
+    "mode": 420,
+    "sha256": "c1930d82cab5b8c24f2c32a5e02ed6061fa2e49cbf5c3a2081c3f9bb366e9306",
+    "size": 1321
+  },
+  {
+    "path": "tools/door/altair_preview.sh",
+    "mode": 420,
+    "sha256": "e0c6c39226293a9dcb8f86dc0a5bf0603f1f6aae4d6dfc5fcf0b93e6d3f69dc3",
+    "size": 975
+  },
+  {
+    "path": "tools/door/altair_scenes.py",
+    "mode": 420,
+    "sha256": "fc64757e635ff3f845f95818a4ba5d724f450cc434a00667488c92d8ccddc152",
+    "size": 2788
+  },
+  {
+    "path": "tools/door/altair_stability.py",
+    "mode": 420,
+    "sha256": "a7c212f0ce2252ed65b4ec667a1e855febf318aa20f570d32b6227d57a934e70",
+    "size": 8310
+  },
+  {
+    "path": "tools/door/door_check.py",
+    "mode": 420,
+    "sha256": "4498b27bb5501b7001f63210e1b6cde1a0cbe8e15a89b1123e7b01eda4252466",
+    "size": 5648
+  },
+  {
+    "path": "tools/door/handheld_depth.py",
+    "mode": 420,
+    "sha256": "77888e4db19df0f6817f4b3424434a50d936c9665f0f0e046506c4ccfaa8cc76",
+    "size": 29301
+  },
+  {
+    "path": "tools/door/pointcloud_preview.py",
+    "mode": 420,
+    "sha256": "a020bc9e0b9f5ccab267af7ae89c5f4ad708cac8d8baa0a9975734cdf0ad2e57",
+    "size": 19425
+  },
+  {
+    "path": "tools/door/test_altair.py",
+    "mode": 420,
+    "sha256": "d4078ddf53acd8c3e391230833ebf62d33d1410defd8f7ff789054a80306af02",
+    "size": 10169
+  },
+  {
+    "path": "tools/door/test_altair_crossing.py",
+    "mode": 420,
+    "sha256": "98956a469dce72871d200340b6c7a022d92e7fd5d2bfc836428ff610acdc42e6",
+    "size": 10544
+  },
+  {
+    "path": "tools/door/test_altair_stability.py",
+    "mode": 420,
+    "sha256": "8bdc360a6fea5766bf79be764eba6ddbfa7a550dd2f9f72d663f46e12cda0cdb",
+    "size": 2293
+  },
+  {
+    "path": "tools/door/test_altair_startup.py",
+    "mode": 420,
+    "sha256": "a1372a78afa921fe2ad28ed544414d32f1554840e58a6cfb0bf7a4e6f7934457",
+    "size": 2753
+  },
+  {
+    "path": "tools/door/test_door_check.py",
+    "mode": 420,
+    "sha256": "48ef39589ab7994e1c3241c3ab7427a599fbc4f693cf725580247963f3712d04",
+    "size": 1432
+  },
+  {
+    "path": "tools/door/test_handheld_depth.py",
+    "mode": 420,
+    "sha256": "6ee1118ab4e1f1f5c16e28b0f6d4d98e6284297a219b3e971b3b9c332898ff2e",
+    "size": 19887
+  },
+  {
+    "path": "tools/door/test_pointcloud_preview.py",
+    "mode": 420,
+    "sha256": "b78513ba0d4a3ec5abacf9acdd4cad58c404b4a945453e7296f4709acb325f0f",
+    "size": 3707
+  }
+]

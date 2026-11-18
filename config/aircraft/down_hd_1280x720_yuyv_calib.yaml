@@ -1,0 +1,55 @@
+image_width: 1280
+image_height: 720
+camera_name: down_hd_1280x720_yuyv
+camera_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 719.607284
+  - 0.0
+  - 651.963551
+  - 0.0
+  - 719.599466
+  - 346.28717
+  - 0.0
+  - 0.0
+  - 1.0
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data:
+  - 0.03579
+  - -0.096609
+  - 0.000765
+  - -0.001131
+  - 0.04178
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data:
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+projection_matrix:
+  rows: 3
+  cols: 4
+  data:
+  - 710.332825
+  - 0.0
+  - 650.148124
+  - 0.0
+  - 0.0
+  - 721.263123
+  - 346.17106
+  - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+  - 0.0

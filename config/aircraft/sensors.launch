@@ -1,0 +1,57 @@
+<launch>
+  <arg name="flight_config" default=""/>
+  <arg name="cameras_enabled" default="false"/>
+  <arg name="lidar_blind" default=""/>
+  <arg name="lidar_surface_voxel" default=""/>
+  <arg name="lidar_map_voxel" default=""/>
+  <arg name="lidar_point_filter_num" default=""/>
+  <arg name="prediction_mode" default="off"/>
+  <arg name="prediction_max_imu_gap" default="0.05"/>
+  <arg name="prediction_max_prediction_horizon" default="1.0"/>
+  <!-- MAVROS + MID360 + FAST-LIO. DF200 is started separately by red_point.sh. -->
+  <!-- Use start_base_sensors.sh, or source ROS and select master port 11341. -->
+  <arg name="fcu_url" default="serial:///dev/serial/by-id/usb-Auterion_PX4_FMU_v6C.x_0-if00:921600"/>
+  <!-- MAVROS owns the FCU USB port; local QGC connects over UDP instead. -->
+  <arg name="gcs_url" default="udp://127.0.0.1:14557@127.0.0.1:14550"/>
+  <!-- Both original message-interval requests: 5000 microseconds = 200 Hz. -->
+  <arg name="imu_interval_us" default="5000"/>
+
+  <include file="$(find mavros)/launch/px4.launch">
+    <arg name="fcu_url" value="$(arg fcu_url)"/>
+    <arg name="gcs_url" value="$(arg gcs_url)"/>
+  </include>
+
+  <!-- Independent manual switch control; no flight task or control-owner changes. -->
+  <node pkg="airseafly_real400_mission" type="rc_payload_control.py"
+        name="rc_payload_control" output="screen" respawn="false" required="false">
+    <param name="flight_config" value="$(arg flight_config)"/>
+  </node>
+
+  <!-- PX4/FAST-LIO divergence while armed in OFFBOARD -> /px4ctrl/force_land.
+       Not required: a gate failure must never stop the lidar or FAST-LIO. -->
+  <node pkg="airseafly_real400_mission" type="localization_gate_node.py"
+        name="localization_gate" output="screen" respawn="true" respawn_delay="1" required="false">
+    <param name="flight_config" value="$(arg flight_config)"/>
+  </node>
+
+  <!-- Keep host IP configuration and mapping/camera settings in their original files. -->
+  <include file="$(find livox_ros_driver2)/launch/msg_MID360.launch"/>
+  <include file="$(find fast_lio)/launch/mapping_mid360.launch">
+    <arg name="prediction_mode" value="$(arg prediction_mode)"/>
+    <arg name="prediction_max_imu_gap" value="$(arg prediction_max_imu_gap)"/>
+    <arg name="prediction_max_prediction_horizon" value="$(arg prediction_max_prediction_horizon)"/>
+    <arg name="lidar_blind" value="$(arg lidar_blind)" if="$(eval arg('lidar_blind') != '')"/>
+    <arg name="lidar_surface_voxel" value="$(arg lidar_surface_voxel)" if="$(eval arg('lidar_surface_voxel') != '')"/>
+    <arg name="lidar_map_voxel" value="$(arg lidar_map_voxel)" if="$(eval arg('lidar_map_voxel') != '')"/>
+    <arg name="lidar_point_filter_num" value="$(arg lidar_point_filter_num)" if="$(eval arg('lidar_point_filter_num') != '')"/>
+    <arg name="rviz" value="false"/>
+  </include>
+
+  <!-- Wait for FCU communication, then issue 105 and 31 sequentially, once each.
+       Failure is reported by this helper and does not terminate the sensor nodes. -->
+  <node pkg="airseafly_real400" type="set_imu_message_intervals.py"
+        name="set_imu_message_intervals" output="screen" respawn="false" required="false">
+    <rosparam param="message_ids">[105, 31]</rosparam>
+    <param name="interval_us" value="$(arg imu_interval_us)" type="int"/>
+  </node>
+</launch>

@@ -1,0 +1,5 @@
+.vscode
+build
+# The ROS1 package manifest is source in uav-aquacore and must be versioned.
+!package.xml
+__pycache__

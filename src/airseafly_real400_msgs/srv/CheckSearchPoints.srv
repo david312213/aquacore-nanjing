@@ -1,0 +1,11 @@
+# Read the current EGO inflated map. This service never sends a flight goal.
+std_msgs/Header header
+geometry_msgs/Point[] points
+---
+bool ready
+int8 UNAVAILABLE=-1
+int8 FREE=0
+int8 OCCUPIED=1
+# One result per requested point; OCCUPIED includes the existing virtual ceiling.
+int8[] occupancy
+string message

@@ -1,0 +1,26 @@
+image_width: 1280
+image_height: 720
+camera_name: df200_calib
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [655.54919,   0.     , 602.74071,
+           0.     , 657.52527, 363.67025,
+           0.     ,   0.     ,   1.     ]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.015492, 0.020420, 0.002329, -0.002667, 0.000000]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1., 0., 0.,
+         0., 1., 0.,
+         0., 0., 1.]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [663.77985,   0.     , 599.43403,   0.     ,
+           0.     , 664.94739, 365.61362,   0.     ,
+           0.     ,   0.     ,   1.     ,   0.     ]

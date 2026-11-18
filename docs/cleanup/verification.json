@@ -1,0 +1,78 @@
+{
+  "local": {
+    "python_passed": 350,
+    "python_requires_ros": 5,
+    "cpp_programs_passed": 8,
+    "project_check_passed": true,
+    "dry_runs": 20
+  },
+  "machine_configuration": {
+    "unchanged": true,
+    "files": {
+      "config/frames.yaml": {
+        "before": "b357ee0ac996c027186547a67d9a8df769a736d1f610cf24fa1e23c38a031e00",
+        "after": "b357ee0ac996c027186547a67d9a8df769a736d1f610cf24fa1e23c38a031e00"
+      },
+      "config/fastlio.yaml": {
+        "before": "4dbe5a2a613eec8041f8cc9c76567915ce086c14a8ec1078b25c70824f5abb88",
+        "after": "4dbe5a2a613eec8041f8cc9c76567915ce086c14a8ec1078b25c70824f5abb88"
+      },
+      "config/px4ctrl.yaml": {
+        "before": "4fac554c3856e381bd9dced708ddef5a60cea607d2baf89af129a2df10319c17",
+        "after": "4fac554c3856e381bd9dced708ddef5a60cea607d2baf89af129a2df10319c17"
+      },
+      "config/aircraft/df200_calib.yaml": {
+        "before": "7a3b29a196b919ddf0c8ad8da8c4cd672a6efd2f158816171c65a8528324eeb9",
+        "after": "7a3b29a196b919ddf0c8ad8da8c4cd672a6efd2f158816171c65a8528324eeb9"
+      },
+      "config/aircraft/MID360_config.json": {
+        "before": "cef773b3857508174e82ae7c378ab35591f74821ef18499551aa18a5c05edb4c",
+        "after": "cef773b3857508174e82ae7c378ab35591f74821ef18499551aa18a5c05edb4c"
+      },
+      "config/cameras/down.launch": {
+        "before": "b3f685df23c0cf22f49245d996c29af304d4bd8e6f6f3737f2f7263d44bb21aa",
+        "after": "b3f685df23c0cf22f49245d996c29af304d4bd8e6f6f3737f2f7263d44bb21aa"
+      }
+    }
+  },
+  "behavior": {
+    "exact_match": true,
+    "ticks": {
+      "delivery": 591,
+      "takeoff": 42,
+      "waypoint": 63
+    }
+  },
+  "parameters": {
+    "profiles": 2,
+    "matching_parameters_per_profile": 37
+  },
+  "onboard": {
+    "source_uploaded": true,
+    "source_match": true,
+    "build_status": "passed",
+    "build_jobs": 2,
+    "build_log": "/home/drone24/aquacore-nanjing/data/deployments/20261024-211713-cleanup/build-retry-2.log",
+    "ros_launch_status": "passed",
+    "python_tests_passed": 355,
+    "python_tests_skipped": 0,
+    "cpp_programs_passed": 11,
+    "core_ctest_passed": 3,
+    "project_check_passed": true,
+    "package_paths_checked": 15,
+    "desktop_unchanged": true,
+    "remaining_update": null
+  },
+  "hardware_started": false,
+  "px4_parameters_written": false,
+  "control_chain": {
+    "compared_files": 385,
+    "changed": []
+  },
+  "build_repairs": [
+    "Resolve core test includes from actual source tree, not obsolete upstream paths",
+    "Update isolated ROS/payload diagnostic test doubles to current controller interface",
+    "Remove obsolete commandStep fixture; actual callback timing remains covered by nine tests",
+    "Match B-spline test to retained per-axis feasibility semantics; planner code unchanged"
+  ]
+}

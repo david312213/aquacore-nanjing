@@ -1,0 +1,114 @@
+<launch>
+  <arg name="boundary_corners" default=""/>
+  <arg name="boundary_bottom" default=""/>
+  <arg name="boundary_top" default=""/>
+
+    <arg name="map_resolution" default=""/>
+    <arg name="map_inflation" default=""/>
+    <arg name="map_max_height" default=""/>
+    <arg name="map_min_height" default=""/>
+    <!-- number of moving objects -->
+    <arg name="obj_num" value="10" />
+    <arg name="drone_id" value="0"/>
+    <!-- Preview uses the same GridMap parameters, with no planner or trajectory server. -->
+    <arg name="map_preview" default="false"/>
+    <arg name="planner_node_name" value="ego_map_preview" if="$(arg map_preview)"/>
+    <arg name="planner_node_name" value="drone_$(arg drone_id)_ego_planner_node" unless="$(arg map_preview)"/>
+    <arg name="planner_node_type" value="ego_map_preview" if="$(arg map_preview)"/>
+    <arg name="planner_node_type" value="ego_planner_node" unless="$(arg map_preview)"/>
+    <arg name="height_origin_z" default="0.0"/>
+    <arg name="max_vel" default="0.3"/>
+    <arg name="max_acc" default="0.5"/>
+    <arg name="require_initial_map" default="false"/>
+    <arg name="position_cmd_topic" default="/position_cmd"/>
+    <arg name="mission_fixed_yaw" default="false"/>
+    <arg name="mission_yaw" default="0.0"/>
+    <arg name="initial_yaw" default="0.0"/>
+    <arg name="hold_at_trajectory_end" default="false"/>
+
+    <arg name="map_size_x" default="100"/>
+    <arg name="map_size_y" default="50"/>
+    <arg name="map_size_z" default="3.0"/>
+    <!-- <arg name="odom_topic" value="/vins_fusion/imu_propagate"/> -->
+    <arg name="odom_topic" default="/Odom_high_freq"/>
+    <arg name="odometry_topic" default="$(arg odom_topic)"/>
+    <arg name="cloud_topic" default="/cloud_registered"/>
+    <arg name="world_frame" default="world"/>
+    
+    <!-- main algorithm params -->
+    <include file="$(find ego_planner)/launch/advanced_param_exp.xml">
+        <arg name="boundary_corners" value="$(arg boundary_corners)"/>
+        <arg name="boundary_bottom" value="$(arg boundary_bottom)"/>
+        <arg name="boundary_top" value="$(arg boundary_top)"/>
+
+        <arg name="map_resolution" value="$(arg map_resolution)" if="$(eval arg('map_resolution') != '')"/>
+        <arg name="map_inflation" value="$(arg map_inflation)" if="$(eval arg('map_inflation') != '')"/>
+        <arg name="map_max_height" value="$(arg map_max_height)" if="$(eval arg('map_max_height') != '')"/>
+        <arg name="map_min_height" value="$(arg map_min_height)" if="$(eval arg('map_min_height') != '')"/>
+        <arg name="planner_node_name" value="$(arg planner_node_name)"/>
+        <arg name="planner_node_type" value="$(arg planner_node_type)"/>
+        <arg name="height_origin_z" value="$(arg height_origin_z)"/>
+        <arg name="require_initial_map" value="$(arg require_initial_map)"/>
+        <arg name="drone_id" value="$(arg drone_id)"/>
+        <arg name="map_size_x_" value="$(arg map_size_x)"/>
+        <arg name="map_size_y_" value="$(arg map_size_y)"/>
+        <arg name="map_size_z_" value="$(arg map_size_z)"/>
+        <arg name="odometry_topic" value="$(arg odometry_topic)"/>
+        <arg name="world_frame" value="$(arg world_frame)"/>
+        <arg name="obj_num_set" value="$(arg obj_num)" />
+        <!-- camera pose: transform of camera frame in the world frame -->
+        <!-- depth topic: depth image, 640x480 by default -->
+        <!-- don't set cloud_topic if you already set these ones! -->
+        <arg name="camera_pose_topic" value="nouse1"/>
+        <!-- EGO 仅使用 MID360 的世界坐标点云建图，深度订阅接到无发布者的话题。
+             pose_type=2 时深度图直接与里程计同步，nouse1 不会禁用深度建图；
+             D435i 深度图仍由前视识别使用，不与点云交替改写 EGO 障碍地图。 -->
+        <arg name="depth_topic" value="/airseafly/unused_depth_image"/>
+        <!-- topic of point cloud measurement, such as from LIDAR  -->
+        <!-- don't set camera pose and depth, if you already set this one! -->
+        <arg name="cloud_topic" value="$(arg cloud_topic)"/>
+        <!-- intrinsic params of the depth camera -->
+        <arg name="cx" value="323.3316345214844"/>
+        <arg name="cy" value="234.95498657226562"/>
+        <arg name="fx" value="384.39654541015625"/>
+        <arg name="fy" value="384.39654541015625"/>
+        <!-- maximum velocity and acceleration the drone will reach -->
+        <arg name="max_vel" value="$(arg max_vel)" />
+        <arg name="max_acc" value="$(arg max_acc)" />
+        <!--always set to 1.5 times grater than sensing horizen-->
+        <arg name="planning_horizon" value="6" />
+        <arg name="use_distinctive_trajs" value="false" />
+        <!-- 1: use 2D Nav Goal to select goal  -->
+        <!-- 2: use global waypoints below  -->
+        <arg name="flight_type" value="1" />
+        <!-- global waypoints -->
+        <!-- It generates a piecewise min-snap traj passing all waypoints -->
+        <arg name="point_num" value="1" />
+        <arg name="point0_x" value="15" />
+        <arg name="point0_y" value="0" />
+        <arg name="point0_z" value="1" />
+        <arg name="point1_x" value="0.0" />
+        <arg name="point1_y" value="0.0" />
+        <arg name="point1_z" value="1.0" />
+        <arg name="point2_x" value="15.0" />
+        <arg name="point2_y" value="0.0" />
+        <arg name="point2_z" value="1.0" />
+        <arg name="point3_x" value="0.0" />
+        <arg name="point3_y" value="0.0" />
+        <arg name="point3_z" value="1.0" />
+        <arg name="point4_x" value="15.0" />
+        <arg name="point4_y" value="0.0" />
+        <arg name="point4_z" value="1.0" />
+    </include>
+    <!-- trajectory server -->
+    <node unless="$(arg map_preview)" pkg="ego_planner" name="drone_$(arg drone_id)_traj_server" type="traj_server" output="screen">
+        <remap from="/position_cmd" to="$(arg position_cmd_topic)"/>
+        <param name="traj_server/mission_fixed_yaw" value="$(arg mission_fixed_yaw)" type="bool"/>
+        <param name="traj_server/mission_yaw" value="$(arg mission_yaw)" type="double"/>
+        <param name="traj_server/initial_yaw" value="$(arg initial_yaw)" type="double"/>
+        <param name="traj_server/hold_at_trajectory_end" value="$(arg hold_at_trajectory_end)" type="bool"/>
+        <remap from="~planning/bspline" to="drone_$(arg drone_id)_planning/bspline"/>
+        <param name="traj_server/time_forward" value="1.0" type="double"/>
+        <param name="world_frame" value="$(arg world_frame)"/>
+    </node>
+</launch>
